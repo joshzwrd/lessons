@@ -1,5 +1,7 @@
 Les selectors
 
+<script>
+
 $(document).ready(functon(){                         // cette ligne veut dire " lorsque ma page (document) est prêt(ready) lancer cette fonction
        
        

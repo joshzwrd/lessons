@@ -1,6 +1,8 @@
 Variables 
 
 
+<script>
+
 Pour déclaré une variable
 
 Var

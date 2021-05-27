@@ -1,6 +1,8 @@
 Premier cours de CSS
 
 
+<script>
+
 Il y a diffèrent moyen d’Écrite en CSS sur notre page HTML .
 
 Il y a 
