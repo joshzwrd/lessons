@@ -1,5 +1,3 @@
-JAVA 
-
 Les collections en Java
 
 
@@ -16,9 +14,10 @@ List en Java est une interface et est implémentée par ArrayList, LinkedList, V
 Création d’une List
 
 Pour créer une liste on commence par utiliser le nom de l’interface puis on va donner le nom de la classe utilisé pour stocker les données.
-1
-2
-	
+
+
+
+
 List list = new ArrayList() ;
 ArrayList lists= new ArrayList();
 
@@ -26,9 +25,9 @@ Les listes peut être génériques ou non génériques c’est à dire dans un A
 
 L’exemple ci-dessus est non générique, car il peut stocker n’importe quel type de valeurs.
 List génériques
-1
-2
-	
+
+
+
 List<String> lists= new ArrayList<>();
 ArrayList<String> lists= new ArrayList();
 
@@ -36,27 +35,11 @@ List dans laquelle on peut stocker que de String
 Ajouter un élément
 
 La classe ArrayList a de nombreuses méthodes très utiles. Par exemple pour ajouter des éléments à la classe ArrayList, on utilise la méthode add();
-Exemple
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-	
+
+
+
+Exemple :
+
 import java.util.*;
  
 public class LesList {
@@ -88,22 +71,8 @@ Pour savoir le nombre d’éléments d’une ArrayList on utilise la méthode si
 Parcourir une liste
 
 Parcourir les éléments d’une ArrayList avec une boucle for, et utilisez la méthode size() pour specifier combien de fois la boucle doit s’éxécuter
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
+
+
 	
 import java.util.*;
  
