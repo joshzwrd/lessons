@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
 Les tableaux HTML
 
 Tableaux htm: Un tableau html se compose d’une partie d’en-tête représente le titre de chaque colonne et une partie corps représentant les données. Les données d’un tableau html sont représentées sous forme de ligne et de colonne.
@@ -80,5 +78,3 @@ Maintenant on à tout ce qu’il faut, on peut commencer avec la création d’u
         <td>25 ans</td>
     </tr>
 </table>
-
-</html>
