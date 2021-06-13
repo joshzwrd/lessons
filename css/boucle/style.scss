@@ -1,0 +1,39 @@
+body{
+    background: #f1f1f1;
+}
+
+.txt {
+    font-family: Playfair Display, sans-serif;
+}
+
+
+// Grace a SASS on peut utiliser une boucle 
+
+/* Exemple 1 : 
+
+@for $i from 1 through 100 {
+
+    .t#{$i}{
+        color: blue;
+    }
+    
+}
+
+cet exemple de créer 100 classes nommé " .t " avec comme propriété  " color: bleu " */
+
+
+// Exemple 2 :
+
+@for $i from 1 through 100 {
+
+    .t#{$i}{
+
+        font-size: $i * 0.1vw;
+        color: rgb($i * 0.5, $i * 1, $i * 2.5)
+    }
+    
+}
+
+// cet exemple permet d'augmenter là taille des éléments de 0.1vw à chaque fois
+
+// avec la propriété color se sera là même chose mais pour chaque paramétres du rgb afin de pouvoir faire évoluer là couleur.
