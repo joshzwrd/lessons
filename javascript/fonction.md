@@ -1,6 +1,6 @@
 <h1> Fonction en JavaScript
 
-<h2> Fonction en JavaScript?
+<h3> Fonction en JavaScript?
 
 - Une fonction désigne un « sous-programme » qui permet d’effectuer des opérations répétitives.
 
