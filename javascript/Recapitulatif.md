@@ -1,32 +1,30 @@
-Variables 
+<h1> Variables 
 
 
-<script>
+<h2> Pour déclaré une variable
 
-Pour déclaré une variable
+- Var
+- Let 
+- Const
 
-Var
-Let 
-Const
+<h2>Nommer les variables 
 
-Nommer les variables 
-
-On peut les appeler comme on veut sauf quelque règle a respecter 
+- On peut les appeler comme on veut sauf quelque règle a respecter 
 Interdit = Espace, "-" , 1variable, "é,è,à"
 Autoriser = " _" , variable1, $ 
 
-Typeof() est un operatueur permet de savoir le type de donnée stocker dans une variable 
+- Typeof() est un operatueur permet de savoir le type de donnée stocker dans une variable 
 
-Les chaines de caractères 
+<h1>Les chaines de caractères 
 
-Pour délimiter une chaîne de caractères il faut utiliser (" ") ou (' ')
+- Pour délimiter une chaîne de caractères il faut utiliser (" ") ou (' ')
 en cas d'erreur il est possible d'utilisé (\' \') ou  il permet de pouvoir échapper au bug 
 
 
-Opérateurs mathématiques
+<h2> Opérateurs mathématiques
 
 
-Dans cette exemple il faut se rendre compte qu'il 2 opérations 
+- Dans cette exemple il faut se rendre compte qu'il 2 opérations 
 	D'abord le "+" donc ici "a + b"  donc on additionne la valeur de a et b   
 	Puis il y a le "=" qui est une opération d'assignation c'est à dire result vaut là valeur de a et b additionné.
 	
