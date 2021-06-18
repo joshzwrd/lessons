@@ -1,10 +1,11 @@
-### Les boucles
+# Les boucles
 
 
 ## Comment utiliser les boucles avec JavaScript ? 
 
-- Les boucles (Structure répétitive) permettent de répéter plusieurs fois une ou plusieurs instruction en fonction d’une condition précise. Il existe deux types de boucles en générale: la boucle while et la boucle for.
-La boucle While
+Les boucles (Structure répétitive) permettent de répéter plusieurs fois une ou plusieurs instruction en fonction d’une condition précise. Il existe deux types de boucles en générale: la boucle while et la boucle for.
+
+### La boucle While
 
 La boucle while permet d’exécuter une instruction tant qu’une condition est vérifiée. Si la condition est vérifiée on rentre dans la boucle pour l’exécution de l’instruction. Sinon on sort de la boucle.
 	
@@ -12,7 +13,7 @@ La boucle while permet d’exécuter une instruction tant qu’une condition est
         //instruction
     }
 
-- Pour que cette boucle ne se déroule pas de manière infinie, il faut l’utiliser de comme ceci: On declare une variable compteur qui sert  à initialiser la boucle et l’incrémenter  à chaque tour de la boucle.
+Pour que cette boucle ne se déroule pas de manière infinie, il faut l’utiliser de comme ceci: On declare une variable compteur qui sert  à initialiser la boucle et l’incrémenter  à chaque tour de la boucle.
 
 
     var i = 0 
@@ -23,7 +24,7 @@ La boucle while permet d’exécuter une instruction tant qu’une condition est
 
 On peut écrire aussi i++ qui permet d’incrémenter la valeur de i  à chaque tour de la boucle.
 
-- On peut forcer la sortie de la boucle en utilisant le mot clef break
+On peut forcer la sortie de la boucle en utilisant le mot clef **break**
 	
     var i = 0 
     while (i < 10) {
@@ -36,7 +37,7 @@ On peut écrire aussi i++ qui permet d’incrémenter la valeur de i  à chaque 
 
 ## La boucle For(les boucles en javascript)
 
-- La boucle for permet d’exécuter un code un certain nombre de fois . On utilise la boucle for lorsqu’on a une idée du nombre de tour que la boucle va faire.
+La boucle for permet d’exécuter un code un certain nombre de fois . On utilise la boucle for lorsqu’on a une idée du nombre de tour que la boucle va faire.
 
 	
     var i = 0 
@@ -44,7 +45,7 @@ On peut écrire aussi i++ qui permet d’incrémenter la valeur de i  à chaque 
        "Je compte " + i
     }
 
-- On utilise aussi la boucle for lorsqu’on travaille avec les tableaux, c’est une boucle qui est indispensable quand on manipule les tableaux.
+On utilise aussi la boucle for lorsqu’on travaille avec les tableaux, c’est une boucle qui est indispensable quand on manipule les tableaux.
 
 	
     var employe= ['Pierre', 'Herard', 'Jacques']

@@ -1,4 +1,4 @@
-### Fonctions
+# Fonctions
 
 ## Les Fonctions en JavaScript?
 

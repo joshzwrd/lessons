@@ -1,4 +1,4 @@
-### Conditions
+# Conditions
 
 
 ## Les conditions en JavaScript
@@ -12,14 +12,14 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
         //instruction a executer
     }
 
-- Supposons qu’on veut afficher la catégorie d’une personne à un utilisateur en fonction de son age en s’assurant que la Variable age est déclarée.
+Supposons qu’on veut afficher la catégorie d’une personne à un utilisateur en fonction de son age en s’assurant que la Variable age est déclarée.
 	
     var age = 18
     if (age == 18) {
        "Il est Majeur!"
     }
 
-- Maintenant on veut afficher un autre message  à l’utilisateur dans le cas ou l’age de la personne n’est pas égale  à 18. C’est-a-dire l’expression est fausse.
+Maintenant on veut afficher un autre message  à l’utilisateur dans le cas ou l’age de la personne n’est pas égale  à 18. C’est-a-dire l’expression est fausse.
 
     var age = 20
     if (age == 18 ) {
@@ -28,7 +28,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
         "Il n'est pas Majeur!"
     }
 
-- Il existe ce qu’on appel les conditions multiples dans les cas plus complexes. Par exemple si on souhaite afficher la catégorie d’une personne pour chaque tranche d’âge.
+Il existe ce qu’on appel les conditions multiples dans les cas plus complexes. Par exemple si on souhaite afficher la catégorie d’une personne pour chaque tranche d’âge.
 
 	
     var age = 18
@@ -42,7 +42,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
 
 ## Opérateur de comparaison(Les condition en JavaScript)
 
-- Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’une variable, on utilise ce qu’on appel les opérateurs de comparaison.
+Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’une variable, on utilise ce qu’on appel les opérateurs de comparaison.
 
     a == b // a égale à b
     a === b // a == b et a est de même "type" que b
@@ -51,7 +51,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
     a <= b // a inférieur OU égal à b
     a < b   // a strictement inférieur à b
 
-- Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
+Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
 	
     var age = 18
     var sexe = 'F'
@@ -81,7 +81,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
 
 ## Le switch / case (Les conditions en JavaScript)
 
-- Le switch case permet d’effectuer une opération en fonction de la valeur de l’expression en paramètre. Elle peut dans certains cas remplacer une série de if et else .On l’utilise lorsque les cas à gérer sont nombreux.
+Le switch case permet d’effectuer une opération en fonction de la valeur de l’expression en paramètre. Elle peut dans certains cas remplacer une série de if et else .On l’utilise lorsque les cas à gérer sont nombreux.
 
 	
     switch (expression) {
@@ -99,7 +99,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
     }
 
 
-- Exemple d’un petit calendrier qui va afficher un moi si la valeur d’une case correspond a la valeur de la variable moi passée en paramètre.
+Exemple d’un petit calendrier qui va afficher un moi si la valeur d’une case correspond a la valeur de la variable moi passée en paramètre.
 	
     var mois = 2
            switch (mois) {
@@ -117,7 +117,7 @@ Pour écrire les condition en JavaScript on procède de la manière suivant:
 
 ## Le ternaire
 
-- Le ternaire (opérateur conditionnel) permet de rendre les conditions plus simples utiliser
+Le ternaire **(opérateur conditionnel)** permet de rendre les conditions plus simples utiliser
 	
     // condition ? <instruction a executer si vrai> : <instruction a executer si faux>
     sexe= 'M'

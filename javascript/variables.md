@@ -1,7 +1,7 @@
-### Variables
+# Variables
 
 
-- Les variable en JavaScript
+## Les variable en JavaScript
 
 Une variable est un espace alloué qui nous permet de stocker des informations de différentes types, de manière temporaire.
 
@@ -9,7 +9,7 @@ Une variable est un espace alloué qui nous permet de stocker des informations d
 
 Pour déclarer une variable en JavaScript on commence par le mot clef **var** suivi du **nom** de la variable. Une variable est constituée de deux parties : son **nom** et sa **valeur**.
 
-**Syntaxe**
+**Syntaxe :**
 	
     var age = 12
     var nom = 'jean'
@@ -42,7 +42,7 @@ Les chaines de caractère
 
 ## Les chaines de caractère
 
-- On utilise les chaines de caractères pour stocker des mots ou des phrases. Pour indiquer a l’interpréteur qu’on est entrain de travailler avec une chaîne de caractères, on entoure le text par des guillemets simples ‘ ‘ ou des guillemets doubles” “.
+On utilise les chaines de caractères pour stocker des mots ou des phrases. Pour indiquer a l’interpréteur qu’on est entrain de travailler avec une chaîne de caractères, on entoure le text par des guillemets simples ‘ ‘ ou des guillemets doubles” “.
 
 	
     var nom = "Jean herard"
