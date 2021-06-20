@@ -1,7 +1,7 @@
 # Variables
 
 
-## Les variable en JavaScript
+## Les variables en JavaScript
 
 Une variable est un espace alloué qui nous permet de stocker des informations de différentes types, de manière temporaire.
 

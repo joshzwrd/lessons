@@ -1,10 +1,7 @@
 # Les bases de HTML
 
 
-
-**`<!DOCTYPE html>`** = permet au navigateur de savoir que il s'agit bien d'une page en HTML 
-
-La **`<!DOCTYPE html>`**déclaration définit que ce document est un document HTML5
+La **`<!DOCTYPE html>`** déclaration définit que ce document est un document HTML5 et permet au navigateur de savoir que il s'agit bien d'une page en HTML 
 
 L'élément **`<html>`** est l'élément racine d'une page HTML
 
@@ -22,7 +19,7 @@ L'élément **`<p>`** définit un paragraphe
 
 **`<title>`** : permet de mettre un titre à la page, ce titre est celui qu'on retrouve sur les resulats de recherche navigateur
 
-`<Style>`
+**`<style>`**
 
 
 

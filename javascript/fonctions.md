@@ -4,15 +4,15 @@
 
 - Une fonction désigne un « sous-programme » qui permet d’effectuer des opérations répétitives.
 
-- Au lieu d’écrire le code complet à chaque fois, on crée une fonction que l’on appellera dès qu’on aura besoin, ce qui peut aussi alléger le code, le rendre plus lisible.
+Au lieu d’écrire le code complet à chaque fois, on crée une fonction que l’on appellera dès qu’on aura besoin, ce qui peut aussi alléger le code, le rendre plus lisible.
 
 **Syntaxe**
 
 - Les fonctions prennent en général des paramètres et retournent un résultat particulier.
 
-- Les fonctions nous permettent d’assembler une certaine logique que l’on pourra utiliser à plusieurs reprises dans la suite de notre code.
+Les fonctions nous permettent d’assembler une certaine logique que l’on pourra utiliser à plusieurs reprises dans la suite de notre code.
 
-- Exemple :
+**Exemple :**
 
     function bonjour(nom) {
         return "Bonjour" + nom
@@ -22,7 +22,7 @@
 
 On peut stocker une fonction en JavaScript dans une variable, sans lui donner de nom.
 
-- Exemple :
+**Exemple :**
 
     var bonjour= function (nom) {
         return "Bonjour" + nom
@@ -34,7 +34,7 @@ Lorsqu’on néglige certains paramètres d’une fonction ils prendront aussi l
 
 ## Note Paramètre d’une fonction c’est une variable local à une fonction
 
-- Exemple :
+**Exemple :**
 	
     var exemple = function (nom) {
         return "Bonjour" + nom
@@ -43,16 +43,16 @@ Lorsqu’on néglige certains paramètres d’une fonction ils prendront aussi l
 
 ## Supposons qu’on veut créer un fonction qui prend un nombre en paramètre et qui va se charger de multiplier ce nombre par 5.
 
-- Exemple :
+**Exemple :**
 	
     var multiplier = function (nombre){
       return nombre * 5
     }
     multiplier(5)
 
-- Il est possible de rendre un paramètre facultatif dans une fonction et lui assigner une valeur par défaut. Pour faire une telle chose il suffit d’ajouter une petite condition dans votre code.
+Il est possible de rendre un paramètre facultatif dans une fonction et lui assigner une valeur par défaut. Pour faire une telle chose il suffit d’ajouter une petite condition dans votre code.
 
-- Exemple :
+**Exemple :**
 	
     var multiplier = function (nombre){
       if (nombre === undefined) {
@@ -68,7 +68,7 @@ Lorsqu’on néglige certains paramètres d’une fonction ils prendront aussi l
 
 On peut aussi stocker une fonction dans une propriété d’un objet.
 
-exemple :
+**Exemple :**
 	
     var personne = {
         nom: 'Marc',
@@ -79,9 +79,9 @@ exemple :
     }
     personne.sexe() //Masculin
 
-- Une fonction utilisée sur un objet est appéllé méthode. Les méthodes sont utilisés sur les types d’objet natifs du JavaScript comme les chaines de caractères ou les entiers.
+Une fonction utilisée sur un objet est appéllé méthode. Les méthodes sont utilisés sur les types d’objet natifs du JavaScript comme les chaines de caractères ou les entiers.
 
-Exemple
+**Exemple :**
 	
     "ok".toUpperCase() // OK
     "Je suis Jean".split(' ') // ["Je", "suis", "Jean"]
