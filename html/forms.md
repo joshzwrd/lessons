@@ -78,8 +78,10 @@ C’est un grand champs de texte qui permet d’écrire des paragraphes. Texte s
 Un textarea dispose des attributs suivants:
 
 - rows : définir le nombre de caractères que contient chaque ligne dans le champs. Lorsque le nombre de caractères dépasse, un retour se fait de manière automatique.
+
 - cols: définir la hauteur du champs, cela désigne le nombre de ligne visible dans le champs. Lorsque le texte dépasse le nombre de lignes, une barre de defilement fait son apparition automatiquement.
 
+**Syntaxe :**
 	
     <textarea name="" id="" cols="30" rows="10"></textarea>
 

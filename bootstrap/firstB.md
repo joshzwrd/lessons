@@ -1,4 +1,4 @@
- #Premier cours sur Bootstrap
+# Premier cours sur Bootstrap
 
 
 ## Les titres et les textes standards 
@@ -135,7 +135,7 @@ Updates Bootstrap 4:
 
  La classe .btn-default a été remplacée par la classe .btn-secondary  Il n’y a plus de classe .btn-xs car il y a la classe .btn-sm qui est proportionnellement bien plus petite qu’avec la version 3
 
-Les images :
+## Les images
 
 plusieurs classes permettent de personnalisé un peu les images
 
@@ -148,13 +148,14 @@ img-thumbnail m'est l'image sous forme de vignette avec un léger bord gris auto
 img-responsive permet à l'image de toujours rester visible notamment sur un petit écran en le rapetissant plutôt que de la couper 
 
 
-Dropdowns ( Listes déroulantes )
+## Dropdowns ( Listes déroulantes )
 
 On l'insère dans un bouton grâce à la classe css "dropdown-toggle" il est succédé par datatoggle="dropdown"
 
 et enfin pour config du menu il faut ajouter la classe "dropdown-menu" a la liste désordonné "lu"
 
 class="caret" est le logo a qui montre qu'il s'agit d'une liste déroulante
+
 class="divider" permet de mettre un trait au milieu pour difisé les informations de la listes 
 
 class="dropup" pour mettre la liste vers le haut 
@@ -164,17 +165,22 @@ Updates Bootstrap 4: 
 
  Plus besoin d’écrire pour afficher la petite flêche, ça se fait automatiquement sur l’élément qui porte la classe .dropdown-toggle  La classe .divider devient .dropdown-divider
 
-Progress Bar ( barres de progression)
+## Progress Bar ( barres de progression)
 
 Updates Bootstrap 4:
- Les classes .progress-bar-* ont été remplacées par .bg-*. Par exemple class="progress-bar progress-bar-danger" devient class="progress-bar bgdanger"  La classe .active devient .progress-bar-animated
 
-Tooltips :
+Les classes .progress-bar-* ont été remplacées par .bg-*. 
+
+Par exemple class="progress-bar progress-bar-danger" devient class="progress-bar bgdanger" 
+
+La classe .active devient .progress-bar-animated
+
+## Tooltips :
 
 Permet de mettre des informations lorsque l'on passe la souris sur un bouton par exemple, cela s'effectue avec javascript et JQuery
 
 
-Modals
+## Modals
 
 Genre de poppups qu'on peut générer sur un bouton ou text 
 
