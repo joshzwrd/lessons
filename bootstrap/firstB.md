@@ -80,13 +80,20 @@ Dans cette exemples à partir de la classe sm(tablet) les div se mettront 2 par 
 
 ## Typography :
 
- La taille de la police globale est passée de 14px à 16px 
- Toutes les tailles de police de nos éléments (p, h1, h2, h3, etc…) ont été augmentées
+- La taille de la police globale est passée de 14px à 16px 
+- Toutes les tailles de police de nos éléments (p, h1, h2, h3, etc…) ont été augmentées
 
-Forms : 
+## Forms : 
 Updates Bootstrap 4:
 
-Sur l’élément qui contient l’élément input , les classes .checkbox et .radio deviennent .form-check. Sur l’élément input, on ajoutera la classe .form-checkinput et sur l’élément label, on ajoutera la classe .form-check-label  Pour différencier un radio d’un input, on utilisera la propriété type de l’élément input (comme avec la version 3). C’est-à-dire type="checkbox" ou type="radio"  Les classes .checkbox-inline et .radio-inline deviennent .form-check-inline  Les classes .has-error, .has-warning, et .has-success sont remplacées par la validation des éléments HTML5 à l’aide des pseudo-classes :invalid et :valid  Les classes .input-lg et .input-sm deviennent .form-control-lg and .form-controlsm
+- Sur l’élément qui contient l’élément input , les classes .checkbox et .radio deviennent .form-check. Sur l’élément input, on ajoutera la classe .form-checkinput et sur l’élément label, on ajoutera la classe .form-check-label 
+
+- Pour différencier un radio d’un input, on utilisera la propriété type de l’élément input (comme avec la version 3). C’est-à-dire type="checkbox" ou type="radio" 
+ Les classes .checkbox-inline et .radio-inline deviennent .form-check-inline 
+
+- Les classes .has-error, .has-warning, et .has-success sont remplacées par la validation des éléments HTML5 à l’aide des pseudo-classes :invalid et :valid 
+
+- Les classes .input-lg et .input-sm deviennent .form-control-lg and .form-controlsm
 
 ## Buttons
 
@@ -130,22 +137,22 @@ il suffit de mettre tous les bouton dans une div et ajouter la classe btn-group 
 
 pour les mettres verticalement il suffit de remplacer la class de la div par btn-group-vertical
 
+**Updates Bootstrap 4:**
 
-Updates Bootstrap 4:
-
- La classe .btn-default a été remplacée par la classe .btn-secondary  Il n’y a plus de classe .btn-xs car il y a la classe .btn-sm qui est proportionnellement bien plus petite qu’avec la version 3
+- La classe .btn-default a été remplacée par la classe .btn-secondary 
+- Il n’y a plus de classe .btn-xs car il y a la classe .btn-sm qui est proportionnellement bien plus petite qu’avec la version 3
 
 ## Les images
 
 plusieurs classes permettent de personnalisé un peu les images
 
-img-rounded permet d'arrondir un peu les bords de l'images 
+    img-rounded permet d'arrondir un peu les bords de l'images 
 
-img-circle m'est l'images dans un cercle
+    img-circle m'est l'images dans un cercle
 
-img-thumbnail m'est l'image sous forme de vignette avec un léger bord gris autour de l'image un petit peu arrondi ( intéressante pour faire des galeries photos )
+    img-thumbnail m'est l'image sous forme de vignette avec un léger bord gris autour de l'image un petit peu arrondi ( intéressante pour faire des galeries photos )
 
-img-responsive permet à l'image de toujours rester visible notamment sur un petit écran en le rapetissant plutôt que de la couper 
+    img-responsive permet à l'image de toujours rester visible notamment sur un petit écran en le rapetissant plutôt que de la couper 
 
 
 ## Dropdowns ( Listes déroulantes )
@@ -154,26 +161,29 @@ On l'insère dans un bouton grâce à la classe css "dropdown-toggle" il est suc
 
 et enfin pour config du menu il faut ajouter la classe "dropdown-menu" a la liste désordonné "lu"
 
-class="caret" est le logo a qui montre qu'il s'agit d'une liste déroulante
+    class="caret" est le logo a qui montre qu'il s'agit d'une liste déroulante
 
-class="divider" permet de mettre un trait au milieu pour difisé les informations de la listes 
+    class="divider" permet de mettre un trait au milieu pour difisé les informations de la listes 
 
-class="dropup" pour mettre la liste vers le haut 
+    class="dropup" pour mettre la liste vers le haut 
 
-Updates Bootstrap 4: 
- Tous les éléments de la liste doivent porter la classe .dropdown-item 
+**Updates Bootstrap 4:**
 
- Plus besoin d’écrire pour afficher la petite flêche, ça se fait automatiquement sur l’élément qui porte la classe .dropdown-toggle  La classe .divider devient .dropdown-divider
+Tous les éléments de la liste doivent porter la classe .dropdown-item 
+
+Plus besoin d’écrire pour afficher la petite flêche, ça se fait automatiquement sur l’élément qui porte la classe .dropdown-toggle
+
+La classe .divider devient .dropdown-divider
 
 ## Progress Bar ( barres de progression)
 
-Updates Bootstrap 4:
+**Updates Bootstrap 4:**
 
-Les classes .progress-bar-* ont été remplacées par .bg-*. 
+- Les classes .progress-bar-* ont été remplacées par .bg-*. 
 
 Par exemple class="progress-bar progress-bar-danger" devient class="progress-bar bgdanger" 
 
-La classe .active devient .progress-bar-animated
+- La classe .active devient .progress-bar-animated
 
 ## Tooltips :
 
@@ -195,6 +205,6 @@ il commence par un tag <nav> en html
 
 permet de mettre a jour et sélectionne a quel endroit nos sommes sur la page et l'indique sur le menu
 
-Carousel  
+## Carousel  
 
 une animation qui permet de mettre des éléments les 1 à la suite des autres , on peut faire ça avec des images ou des textes 

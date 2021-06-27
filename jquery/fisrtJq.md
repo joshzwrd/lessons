@@ -3,8 +3,7 @@
 ## Les selectors
 
 
-    $(document).ready(functon(){                         // cette ligne veut dire " lorsque ma page (document) est prêt(ready) lancer cette fonction
-           
+    $(document).ready(functon(){   // cette ligne veut dire " lorsque ma page (document) est prêt(ready) lancer cette fonction
            
     });
 
@@ -59,18 +58,19 @@ Dans cette exemple une fois que le paragraphe 2 se ferme en 3 secondes, le parag
 
 se met dans une fonction en utilisant un selector
 
-    $(selector).animate (arg1);  la fonction animate cette fonction prend des arguments
+    $(selector).animate (arg1);  la fonction animate cette fonction prend des arguments
        
-       arg1 le premier est un objet qui correspond au propriété qu'on veut animé du selector
+arg1 le premier est un objet qui correspond au propriété qu'on veut animé du selector
 
 on peut gerer ici les marges avec left/right , opacity pour la transparence, width pour la taille.....
 
-       width: +=150 veut qu'on ajoute 150 à la valeur initial
+    width: +=150 veut qu'on ajoute 150 à la valeur initial
+
 il y a 2 facon d'executer tout ca , soit tout d'un coup soit chaque propriété à la suite
 
 **Exemple 1 : Tout d'un coup**
 
-    $("div") .animate( { left: '60px'} , opacity: 0,2, width: '50px', height: '50px  }, 3000 // vitesse // );
+    $("div") .animate( { left: '60px'} , opacity: 0,2, width: '50px', height: '50px  }, 3000 // vitesse // );
 
 **Exemple 2 : A la Suite**
 
@@ -114,14 +114,14 @@ toggleclass permet de mettre et enlever en fonction de si la class y est ou n'y 
 
 **Exemple :**
 
-    $(selector) .addclass ("red");
-    $(selector) .removeclass ("red") ; 
+    $(selector) .addclass ("red");
+    $(selector) .removeclass ("red") ; 
 
 en utilisant la fonction css on va pouvoir infiltrer les informations du selector et ajouter et modifier les attributs css 
 
 **Exemple :**
 
-    $(selector) .css ({ "color: "red", font-weight: "blod", background: "yellow" );
+    $(selector) .css ({ "color: "red", font-weight: "blod", background: "yellow" );
 
 
 ## Arborescence des éléments 
