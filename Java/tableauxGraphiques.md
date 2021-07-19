@@ -42,9 +42,6 @@ Pour ajouter des données dans un **JTable** il suffit de passer directement au 
     
     }
 
-Résultat du code ci-dessus
-
-Tableau dans un scroll
 
 Vous avez remarqué qu’on a mis le tableau dans un JScrollPane. Pour que les titres soient affichées dans l’en-tête de de notre tableau, il faut penser a le mettre dans un JScrollPane.
 
@@ -99,9 +96,6 @@ Le JScrollPane indique automatiquement au tableau l’endroit où il doit affich
         }
     
     }
-
-Résultat du code ci-dessus sans scroll
-Tableau sans scroll
 
 On remarque que les titres ne s’affichent pas dans l’en-tête de notre tableau. Pour que les titre soient affichées dans l’en-tête de notre tableau il faut qu’on mettre le tableau dans uns scroll.
 
