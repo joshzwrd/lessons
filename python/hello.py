@@ -3,8 +3,8 @@ print("Hello, le monde entier")
 print("Python est interprété")
 
 # variables
-nom = "GAMBA"
-prenom = "Leopold"
+nom = "SOSA"
+prenom = "Josh"
 age  = 12
 
 # Print, type()  | isinstance
