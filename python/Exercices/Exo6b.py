@@ -1,0 +1,1 @@
+# Demander à l’utilisateur quel âge il a. S’il est âgé de 18 ans ou pas, il entre ou pas dans une boîte de nuit.
