@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Atlantique</title>
+    <link rel="stylesheet" href="atlantic.css">
+</head>
+<body>
+    <h1>RESERVATION</h1>
+    <form   name="reservation" id="reservation" method="POST" action="reservation.php">
+        <table class="tab_resa">
+            <tr>
+                <td>Nom :</td>
+                <td><input type="text" name="nom"></td>
+            </tr>
+            <tr>
+                <td>Email* :</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Code : </td>
+                <td><input type="text" name="codepostale" pattern="[0-9]{5}"></td>
+            </tr>
+            <tr>
+                <td>Téléphone : </td>
+                <td><input type="tel" name="phone" pattern="[0-9]{10}"> </td>
+            </tr>
+            <tr>
+                <td>Paiment : </td>
+                <td><input type="radio" name="payer" value="CB" checked> CB
+                    <input type="radio" name="payer" value="Cheque"> Chèque</td>
+            </tr>
+            <tr>
+                <td>Connu par : </td>
+                <td><input type="checkbox" name="choix1" value="presse"> Presse
+                    <input type="checkbox" name="choix2" value="internet"> Internet
+                    <input type="checkbox" name="choix3" value="autre"> Autre <br></td>
+            </tr>
+            <tr>
+                <td>Type de chambre :</td>
+                <td> <select name="choix">
+                    <option value="moderne">Moderne</option>
+                    <option value="baroque">Baroque</option>
+                    <option value="classique">Classique</option></td>
+                </select>
+            </tr>
+            <tr>
+                <td>Service : </td>
+                <td><select name="choix" size="3" multiple>
+                    <option value="bronzage">Bronzage</option>
+                    <option value="wifi">WIFI</option>
+                    <option value="sauna">Sauna</option>
+                    <option value="tv_couleur">TV Couleur</option>
+                    <option value="repassage">Repassage</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td>Message : </td>
+                <td><textarea name="commentaire" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+
+                <td>
+                    <!-- <input type="reset" name="effacer" value="Effacer"> -->
+                    <a href="formulaire.html">
+                        <img src="image/effacer.gif" alt="">
+                    </a>
+                    <!-- <input type="submit" name="send" value="Envoyer"> -->
+                    <input type="image" src="image/envoyer.gif" alt="">
+                </td>
+            </tr>
+        </table>
+       
+    </form>
+    <div class="centrage" id="adresse">
+        HOTEL ATLANTIC <br>
+        100, Rue de la République 75015 <br>
+        Paris France <br>
+        <a href="mailto:atlantique@atlantique.com">
+        nous écrire
+        </a>
+    </div>
+    <div class="centrage">
+        <a href="index.html">
+            accueil
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="chambre.html">
+            chambres
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="tarif.html">
+            tarifs
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="reserve.html">
+            reserver
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">
+            contact
+        </a>
+    </div>
+    <blockquote class="centrage" id="copyright">
+        Copyright decemblre 2015, Atlantic HOTEL, tous drois réservés
+    </blockquote>
+</body>
+</html>
