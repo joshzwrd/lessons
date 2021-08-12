@@ -8,10 +8,12 @@ Les boucles (Structure répétitive) permettent de répéter plusieurs fois une 
 ### La boucle While
 
 La boucle while permet d’exécuter une instruction tant qu’une condition est vérifiée. Si la condition est vérifiée on rentre dans la boucle pour l’exécution de l’instruction. Sinon on sort de la boucle.
-	
-    while (condition) {
-        //instruction
-    }
+
+```js
+while (condition) {
+	//instruction
+}
+```
 
 Pour que cette boucle ne se déroule pas de manière infinie, il faut l’utiliser de comme ceci: On declare une variable compteur qui sert  à initialiser la boucle et l’incrémenter  à chaque tour de la boucle.
 
