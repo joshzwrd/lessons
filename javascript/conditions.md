@@ -7,38 +7,48 @@
 
 Pour écrire les condition en JavaScript on procède de la manière suivant:
 
-	
-    if (expression) {
-        //instruction a executer
-    }
+```js
+
+if (expression) {
+    //instruction a executer
+}
+```
 
 Supposons qu’on veut afficher la catégorie d’une personne à un utilisateur en fonction de son age en s’assurant que la Variable age est déclarée.
 	
-    var age = 18
-    if (age == 18) {
-       "Il est Majeur!"
-    }
+```js
+var age = 18
+
+if (age == 18) {
+    "Il est Majeur!"
+}
+```
 
 Maintenant on veut afficher un autre message  à l’utilisateur dans le cas ou l’age de la personne n’est pas égale  à 18. C’est-a-dire l’expression est fausse.
 
-    var age = 20
-    if (age == 18 ) {
-        "Il est Majeur!"
-    } else {
-        "Il n'est pas Majeur!"
-    }
+```js
+var age = 20
+
+if (age == 18 ) {
+    "Il est Majeur!"
+} else {
+    "Il n'est pas Majeur!"
+}
+```
 
 Il existe ce qu’on appel les conditions multiples dans les cas plus complexes. Par exemple si on souhaite afficher la catégorie d’une personne pour chaque tranche d’âge.
 
-	
-    var age = 18
-    if (age == 18) {
-        "Il est Majeur!"
-    } else if (age > 18) {
-        "Il est Adulte!"
-    } else {
-       "Il est mineur!"
-    }
+```js
+var age = 18
+
+if (age == 18) {
+    "Il est Majeur!"
+} else if (age > 18) {
+    "Il est Adulte!"
+} else {
+    "Il est mineur!"
+}
+```
 
 ## Opérateur de comparaison(Les condition en JavaScript)
 
@@ -53,13 +63,16 @@ Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’
 
 Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
 	
-    var age = 18
-    var sexe = 'F'
-    if (age == 18 && sexe == 'F') {
-        "Vous avez accès!"
-    } else if (age > 18) {
-        "Accès refuse!"
-    } 
+```js
+var age = 18
+
+var sexe = 'F'
+if (age == 18 && sexe == 'F') {
+    "Vous avez accès!"
+} else if (age > 18) {
+    "Accès refuse!"
+}
+``` 
 
 ## Quelques opérateurs booléens
 
@@ -83,36 +96,40 @@ Parfois on veut combiner les condition pour trouver un résultat, par exemple : 
 
 Le switch case permet d’effectuer une opération en fonction de la valeur de l’expression en paramètre. Elle peut dans certains cas remplacer une série de if et else .On l’utilise lorsque les cas à gérer sont nombreux.
 
-	
-    switch (expression) {
-      case valeur1:
+```js	
+switch (expression) {
+    case valeur1:
+    //Instruction a executer si le résultat de 
+        //l'expression correspond a la valeur1
+    break
+    case valeur2:
         //Instruction a executer si le résultat de 
-         //l'expression correspond a la valeur1
-        break
-      case valeur2:
-         //Instruction a executer si le résultat de 
-         //l'expression correspond a la valeur2
-        break
-      default:
-        //Instruction par défaut si les valeur ne correspond pas l'exp
-        break
-    }
+        //l'expression correspond a la valeur2
+    break
+    default:
+    //Instruction par défaut si les valeur necorrespond pas l'exp
+    break
+}
+```
 
 
 Exemple d’un petit calendrier qui va afficher un moi si la valeur d’une case correspond a la valeur de la variable moi passée en paramètre.
-	
-    var mois = 2
-           switch (mois) {
-               case 1:
-                   "Janvier"
-                   break
-               case 2:
-                   "Fevrier"
-                   break
-               default:
-                   "Ce Mois n'existe pas"
-                   break
-           }
+
+```js	
+var mois = 2
+
+        switch (mois) {
+            case 1:
+                "Janvier"
+                break
+            case 2:
+                "Fevrier"
+                break
+            default:
+                "Ce Mois n'existe pas"
+                break
+        }
+```
 
 
 ## Le ternaire
