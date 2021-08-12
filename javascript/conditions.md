@@ -7,30 +7,30 @@
 
 Pour écrire les condition en JavaScript on procède de la manière suivant:
 
-	
-    if (expression) {
-        //instruction a executer
-    }
-
+```js
+if (expression) {
+    //instruction a executer
+}
+```	
 Supposons qu’on veut afficher la catégorie d’une personne à un utilisateur en fonction de son age en s’assurant que la Variable age est déclarée.
-	
-    var age = 18
-    if (age == 18) {
-       "Il est Majeur!"
-    }
-
+```js
+var age = 18
+if (age == 18) {
+    "Il est Majeur!"
+}
+```	
 Maintenant on veut afficher un autre message  à l’utilisateur dans le cas ou l’age de la personne n’est pas égale  à 18. C’est-a-dire l’expression est fausse.
-
-    var age = 20
-    if (age == 18 ) {
-        "Il est Majeur!"
-    } else {
-        "Il n'est pas Majeur!"
-    }
-
+```js	
+var age = 20
+if (age == 18 ) {
+    "Il est Majeur!"
+} else {
+    "Il n'est pas Majeur!"
+}
+```	
 Il existe ce qu’on appel les conditions multiples dans les cas plus complexes. Par exemple si on souhaite afficher la catégorie d’une personne pour chaque tranche d’âge.
 
-	
+```js			
     var age = 18
     if (age == 18) {
         "Il est Majeur!"
@@ -39,30 +39,30 @@ Il existe ce qu’on appel les conditions multiples dans les cas plus complexes.
     } else {
        "Il est mineur!"
     }
-
+```	
 ## Opérateur de comparaison(Les condition en JavaScript)
 
 Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’une variable, on utilise ce qu’on appel les opérateurs de comparaison.
-
+```js	
     a == b // a égale à b
     a === b // a == b et a est de même "type" que b
     a >= b // a supérieur OU égal à b
     a > b   // a strictement supérieur à b
     a <= b // a inférieur OU égal à b
     a < b   // a strictement inférieur à b
-
+```	
 Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
-	
-    var age = 18
-    var sexe = 'F'
-    if (age == 18 && sexe == 'F') {
-        "Vous avez accès!"
-    } else if (age > 18) {
-        "Accès refuse!"
-    } 
-
+```js	
+var age = 18
+var sexe = 'F'
+if (age == 18 && sexe == 'F') {
+    "Vous avez accès!"
+} else if (age > 18) {
+    "Accès refuse!"
+} 
+```	
 ## Quelques opérateurs booléens
-
+```md
     // || OU
     true || true // true
     true || false // true
@@ -78,7 +78,7 @@ Parfois on veut combiner les condition pour trouver un résultat, par exemple : 
     // ! NON
     !true # false
     !false # true
-
+```	
 ## Le switch / case (Les conditions en JavaScript)
 
 Le switch case permet d’effectuer une opération en fonction de la valeur de l’expression en paramètre. Elle peut dans certains cas remplacer une série de if et else .On l’utilise lorsque les cas à gérer sont nombreux.

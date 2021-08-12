@@ -22,38 +22,41 @@ Les objets se sont des types qui nous permettent de stocker des informations plu
 
 Pour cet exemple ce sera un peu difficile de différencier l’age et les notes de l’élève. Pour cela on a la possibilité de créer ce qu’on appelle des tableaux associatifs. Un tableau associatif permet tout simplement de définir une clef (propriétés) pour chaque valeur.
 
-    var eleve = {
-       nom: 'Jacques',
-       age: 22,
-       notes: [12, 34, 20] 
-    }
+```js
+var eleve = {
+    nom: 'Jacques',
+    age: 22,
+    notes: [12, 34, 20] 
+}
+```
 
 Les clefs sont appellés des propriétés dans un objet. Pour récupérer une valeur associée à une clef (propriété) on utilise le nom de l’objet suivit d’un point (.) suivit du nom de la clefs (propriété) comme ceci:
-	
+```js	
     eleve.nom // Jacques
     eleve.notes //Pour afficher les notes
     eleve.notes[1] // 34
-
+```
 On peut aussi utiliser une notation proche de celle des tableaux
-	
+```js	
     eleve['notes'] // Affiche le notes
-
+```
 Les objets peuvent contenir aussi des objets.
-	
+```js	
     var eleve = {
         notes: {
             histoire: 20,
             math: 14   
         }   
     }
-
+```
 Pour récupérer la note d’histoire de l’élève on peut alors faire comme ceci:
-	
+```js	
     eleve.notes.histoire// 20
     eleves.nom // undefined
-
+```
 ## Types spéciaux
-
+```js
     undefined // quand on essaie d'accéder qui n'est pas definir
     null // 
     NaN // 'not a number'
+```

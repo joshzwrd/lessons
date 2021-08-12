@@ -1,15 +1,15 @@
-<h1>L'essentiel de Javascript 
+# L'essentiel de Javascript 
 
-<h2> Variables 
+## Variables 
 
 
-<h3> Pour déclaré une variable
+### Pour déclaré une variable
 
-- Var
-- Let 
-- Const
+- **var**
+- **let** 
+- **const**
 
-<h3>Nommer les variables 
+###Nommer les variables 
 
 - On peut les appeler comme on veut sauf quelque règle a respecter 
 Interdit = Espace, "-" , 1variable, "é,è,à"
@@ -17,13 +17,13 @@ Autoriser = " _" , variable1, $
 
 - Typeof() est un operatueur permet de savoir le type de donnée stocker dans une variable 
 
-<h3>Les chaines de caractères 
+###Les chaines de caractères 
 
 - Pour délimiter une chaîne de caractères il faut utiliser (" ") ou (' ')
 en cas d'erreur il est possible d'utilisé (\' \') ou  il permet de pouvoir échapper au bug 
 
 
-<h3> Opérateurs mathématiques
+### Opérateurs mathématiques
 
 
 - Dans cette exemple il faut se rendre compte qu'il 2 opérations 
@@ -37,7 +37,7 @@ parce qu'il y a des priorité en mathématique donc le commence d'abord par "b *
 
 - La multiplication et la division sont prioritaire par apport à l'addition et la soustraction 
 
-<h3> Additionner et concaténer
+### Additionner et concaténer
 
 - Dans les exemples précédent le "+" servait à faire une addition c'est à dire "a + b" étant de nombre le résultat était un nombre
 
@@ -57,25 +57,25 @@ Une variable va pouvoir convertir là valeur d'une chaîne de caractère pour ob
 
 - Ici le résultat est donc 6  /  Number (b) à permis de convertir la chaîne de caractère en Nombre .
 
-<h3> Utiliser des Template Strings
+### Utiliser des Template Strings
 
 
-<h3> Incrémenter et décrémenter des nombres
+### Incrémenter et décrémenter des nombres
 
 
-<h3> Mettre en oeuvre des opérateurs booléens 
+### Mettre en oeuvre des opérateurs booléens 
 
 
-<h3> Découvrir l'objet ARRAY ou Tableau
+### Découvrir l'objet ARRAY ou Tableau
 
 
-<h3> Travailler avec des objets 
+### Travailler avec des objets 
 
 
-<h2> Boucles et Conditions
+## Boucles et Conditions
 
 
-<h3> Syntaxe conditionnelle 
+### Syntaxe conditionnelle 
 
 - var age = 43;
 
@@ -90,7 +90,7 @@ else{
 
 
 
-<h3> L’opération ternaire 
+### L’opération ternaire 
 
 - simplifie en 3 partie 
 
@@ -98,14 +98,14 @@ else{
 
 - age >= 18 ? console.log(~ à  $(age) ans, vous êtes majeur.~)  :  console.log(~à  $(age) ans, vous êtes encore mineur ~);
 
-<h3> Opération de comparaison
+### Opération de comparaison
 
 - === veut dire strictement il vérifie aussi le type de la variables (Ex : Nombre ou String)
 == compare sans le type
 
 - ! = veut dire l'inverse    // Exemple  console.log ( ! true ) ;  = false
 
-<h3> Boucles While / Do While
+### Boucles While / Do While
 
 - while = tant que 
 
@@ -124,7 +124,7 @@ else{
 
 - On peut lire ça : Fait un +1 tant que là valeur de a est inférieur a 10
 
-<h3> Boucles For
+### Boucles For
 
 - for  en  3 partie ( initialisation (variables de contrôle ; condition à vérifier; script de modification)
 
@@ -136,9 +136,9 @@ console.log("Boucle terminée !");
 - Dans les 3 cas ci-dessous le résultat est le même 
 
 
-<h3> Les mots clés Continue et Break 
+### Les mots clés Continue et Break 
 
-<h4> Continue :
+### Continue :
 
 - For( Let i = 1;  i < 10;  i++){
 	if(i  == 5){
@@ -152,19 +152,19 @@ console.log("Boucle terminée !");
 
 - dans la console il va sauter le valeur 5 et enchaîner directement 4-6.... jusqu’à . 
 
-<h4> Break :
-
-- For( Let i = 1;  i < 10;  i++){
+#### Break :
+```js
+for( Let i = 1;  i < 10;  i++){
 	if(i  == 5){
 		break;
 	}
 	console.log(~La valeur de la variable i est $(i).~);
 }
 console.log("Boucle terminée !");
-
+```
 - Break lui sort directement de la boucle et va afficher directement" Boucle terminée " après voir afficher 4.
 
-<h3> Boucle For Each
+### Boucle For Each
 
 
 - color in colors : permet de ciblier les elements que contient l'array colors
@@ -174,30 +174,24 @@ console.log("Boucle terminée !");
 - color = index dans ce cas là
 
 
-<h2>Les Fonctions 
+### Les Fonctions 
 
 - le principe de la fonction : Définir dans premier temps puis l’exécuter
 
-<h3> les fonctions simples 
-
-
+### les fonctions simples 
 
 - une variable de type function 
-
-
 - ici le addNumber() permet d'excecuter là fonction
-
-
 - les fonctions peuvent être utilisé plusieurs fois 
 
-<h3> Envoyer des données dans une fonction
+### Envoyer des données dans une fonction
 
 - Retourner les valeurs
 
 - Dans l'exemple précédent on défini la fonction, on lui affecté des donner puis on va les chercher pour en faire ce que l'on veut
 dans l'exemple il envoi le résultat dans la console.
 
-<h3> Exécuter immédiatement une fonction 
+### Exécuter immédiatement une fonction 
 
 - il s'agit enfaîte de la fonction anonyme
 une fonction anonyme est une fonction qu'on a pas besoin de  nommé car on va en avoir besoin qu'une seule fois a un moment de notre script.
@@ -205,12 +199,12 @@ une fonction anonyme est une fonction qu'on a pas besoin de  nommé car on va e
 - comme ici ou on créer une fonction avec des données et on va directement avoir le résultat
  en 2 parentaises   /* (la fontion) +  ( ce qu'on veut d'elle) */
 
-<h3> Appréhender les fonctions à flèche 
+### Appréhender les fonctions à flèche 
 
 
 - le résultat est le même dans les 2 exemples précédent 
 
-<h3> Comprendre la portée des variables 
+### Comprendre la portée des variables 
 
 - La variable result a une porté global car elle est déclaré à l'extérieur d'un fonction elle peut donc est lisible et modifiable dans le script entier 
 
@@ -223,23 +217,23 @@ alors pour qu'elle puisse fonctionné correctement le console.log " l'action ou 
 
 - Dans cet exemple le code fonctionne .
 
-<h3> Utiliser LET
+### Utiliser LET
 
 - Let permet de déclarer des variables dont là porté est limité au bloc de code à l’intérieur du quel là variable est déclaré 
 
 
 - dans cette exemple Let est déclare dans le if , si le console.log avait été mis à l’extérieur du if là console aurai renvoyé ERROR 
 
-<h3> Utiliser CONST
+### Utiliser CONST
 
 - Une Constante est une variable dont la valeur ne peut jamais changer .
 Il faut non seulement les déclarés mais aussi les initialiser (Donner une valeur).
 
 - Selon la convention il faut déclaré leurs non en majuscule .
 
-<h2> Les Objets de JAVASCRIPT
+## Les Objets de JAVASCRIPT
 
-<h3> Découvrez l'objet MATH
+### Découvrez l'objet MATH
 
 - permet des travaillez avec les nombres
 
@@ -249,7 +243,7 @@ Math.floor =  Arrondie au plus bas    Math.floor(4.7);    // returns 4
 - Math.round = Arrondi en fonction du chiffre après la virgule 
 - Math.round(4.7);    // returns 5  | Math.round(4.4);    // returns 4
 
-<h3> Objet Date
+### Objet Date
 
 - L'objet Date est utilisé pour travailler avec des dates et des heures.
 
@@ -264,11 +258,11 @@ Math.floor =  Arrondie au plus bas    Math.floor(4.7);    // returns 4
 - var d = new Date(dateString);
 - var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
 
-<h3> Revisiter les chaines de caractères
+### Revisiter les chaines de caractères
 
 W3Schools JAVASCRIPT STRING
 
-<h3> Objet Number
+### Objet Number
 
 - L'objet Number est un peu comme l'objet Math il est natif a JavaScript pas besoin de le créer il suffit de le manipulé.
 Il à des propriété et des méthodes, Les méthodes en majuscules sont des constantes .
@@ -276,7 +270,7 @@ Il à des propriété et des méthodes, Les méthodes en majuscules sont des con
 - Documentation Complète sur W3Schools JAVASCRIPT Number Référence 
 
 
-<h3> Objet Array 
+### Objet Array 
 
 - Array = Tableau 
 
@@ -288,10 +282,10 @@ ou .push qui permet d'ajouter un élément a notre array 
 - Documentation Complète sur W3Schools JAVASCRIPT Array Référence 
 
 
-<h3> S'initier a BOM
+### S'initier a BOM
 
 
-<h3> Les Objet Window & Navigateur
+### Les Objet Window & Navigateur
 
 - L'objet Window détient des méthodes et des propriétés 
 
@@ -312,7 +306,7 @@ Pour avoir la détail des propriétés il faut consulter www.W3School.com
 
 <h2> L’élément DOM
 
-<h3> Qu'est ce qu'est le DOM
+### Qu'est ce qu'est le DOM
 
 - Document objet modèle
 
@@ -325,7 +319,7 @@ Il permet de manipuler les éléments d'une page web en fonction des parents et 
 
 - Les nœuds et Les éléments
 
-<h3> Accéder aux éléments du DOM
+### Accéder aux éléments du DOM
 
 - Exemple 1 :
 
@@ -341,7 +335,7 @@ Il permet de manipuler les éléments d'une page web en fonction des parents et 
 
 - En allant chercher 'p' avec document. il allait afficher tout les éléments 'p' de la page alors que on à besoin uniquement de celui du footer alors dans ce cas là l'idée est d'utiliser l'objet 'footer' comme base pour aller chercher notre élément comme dans le cas ci-dessus.
 
-<h3> Utiliser querySelector et querySelectorAll
+### Utiliser querySelector et querySelectorAll
 
 - Ce sont 2 nouvelles méthodes pour aller chercher nos éléments DOM mais via un Sélecteur à la manière de CSS
 
@@ -355,7 +349,7 @@ Pour un Tableau par exemple.
 
 - https://www.w3schools.com/jsref/met_document_queryselector.asp
 
-<h3> Modifier les éléments du DOM
+### Modifier les éléments du DOM
 
 - Pour modifier un attribut il faut utiliser là méthode .setAttribute .
 
@@ -369,7 +363,7 @@ Dans l'exemple précédent :
 - Dans les 2 cas le résultat est là même 
 
 
-<h3> Créer de nouveaux élément dans le DOM
+### Créer de nouveaux élément dans le DOM
 
 - Pour Créer un nouvel élément directement de manière programmatif en JavaScript il faut faire appel appel à une méthode de document qui est .createElement()
 
@@ -395,7 +389,7 @@ Dans l'exemple précédent :
 
 - .appendChild : Permet créer un nœud entre 2 élément en ajoutant l'élément enfant 
 
-<h3> Modifier les styles CSS en Javascript
+### Modifier les styles CSS en Javascript
 
 - Dans l'exemple ci-dessous on modifier le fond d'écran de la page 
 
@@ -403,7 +397,7 @@ Dans l'exemple précédent :
 
 <h2>Afficher une image aléatoire 
 
-<h3> Comprendre JSON
+### Comprendre JSON
 
 - JSON = JavaScript Objet Notation
 
@@ -415,7 +409,7 @@ JSON.Parse qui permet enfaîte de reprendre tout les informations JSON et le cla
 - En Effectuant un console.log on obtient
 
 
-<h3> Choisir un élément aléatoire dans un object ARRAY 
+### Choisir un élément aléatoire dans un object ARRAY 
 
 - Il y a 14 élément dans notre Array noté de 0 à 13 index
 
@@ -429,12 +423,12 @@ JSON.Parse qui permet enfaîte de reprendre tout les informations JSON et le cla
 
 
 
-<h3> Afficher l'image choisie 
+### Afficher l'image choisie 
 
 - Ici on va modifier là propriété de backgroundImage de l'endroit ou on veut insérer notre liste d'image aléatoire .
 Et on lui met le lien vers lequel il faut faut aller chercher les images sans oublier notre propriété randomImage qu'on à créer précédemment 
 
-<h3> Vider un élément de son contenu 
+### Vider un élément de son contenu 
 
 
 - firstChild est une propriété de l'objet désignant le première de celui-ci
@@ -444,7 +438,7 @@ removeChild permet de retiré un enfant à un objet
 Tant que notre objet à un première enfant, 
 	il faut enlever ce premier enfant.
 	
-<h3> Afficher du contenu à l'écran 
+### Afficher du contenu à l'écran 
 
 - Pour afficher du contenu il faut créer un élément dans lequel on insère des données à afficher
 
@@ -455,7 +449,7 @@ Tant que notre objet à un première enfant,
 
 - C'est exactement le même procéder pour 
 
-<h3> Propager le script aux autres pages 
+### Propager le script aux autres pages 
 
 - Afin D'éviter le erreur si vous avez à mettre un script aussi complet sur plusieurs page, c'est bien de mettre des conditions 
 
@@ -463,7 +457,7 @@ Tant que notre objet à un première enfant,
 
 <h2> Les événement de JavaScript
 
-<h3> Comprendre le rôle des événements 
+### Comprendre le rôle des événements 
 
 - Des milliers d'événements se produisent en permanence.
 - Possibilité de lier des fonctions JavaScript à ces événements.
@@ -471,7 +465,7 @@ Tant que notre objet à un première enfant,
 - Intercepter l'événements qui nous intéresse et exércuter une fonction en réponse.
 
 
-<h3> Réagir à des événements
+### Réagir à des événements
 
 - 2 manières d'utiliser le Onclick 
 
@@ -479,7 +473,7 @@ Tant que notre objet à un première enfant,
 
 - pas forcement satisfaisante car elles ont beaucoup de limites et on appel ça du code sale car c'est mélanger le html et le javascript 
 
-<h3> Utiliser addEventListener
+### Utiliser addEventListener
 
 - En français c'est un écouteurs d'événements 
 
@@ -490,7 +484,7 @@ Tant que notre objet à un première enfant,
 
 - Dans cet exemple au clique une alerte 'Bonjour !' apparaît puis une fois qu'on valide cette alerte une seconde apparaît 'Au Revoir !' Toujours dans le même ordre car c'est une boucle qui recommence à chaque fois 
 
-<h3> Inspecter les propriétés des événements 
+### Inspecter les propriétés des événements 
 
 - Même les événements sont des objets 
 
@@ -498,7 +492,7 @@ Tant que notre objet à un première enfant,
 
 - Rappel : Il y a 2 variables du même nom image , ça ne pose pas de problème justement car elles ont été créer avec le mot clé Let et donc là variable est visible uniquement dans le bloc de code dans lequel il est déclaré.
 
-<h3> Utiliser l'événement CLICK
+### Utiliser l'événement CLICK
 
 
 - Ici grâce a là fonction showSinglePict on va pouvoir manipuler les paramètres 'click' du for 
@@ -507,13 +501,13 @@ Ici on rend un élément invisible, visible avec .Toggle qui permet enfaîte de 
 
 - Pour pouvoir exploité l'objet événement dans cet exemple il s'agit de la fonction showSinglePict il faut le nommé d'ou le (e) il est souvent appeler ev ou event 
 
-<h3> Employer ONLOAD
+### Employer ONLOAD
 
 - ' load ' permet d'effectué une action au moment ou l'on charge là page
 
 - Ici on met l'événement sur window car c'est l'objet le plus élevé de là hiérarchie, dans cette exemple là fonction utiliser est une fonction à flèche  
 
-<h3> Récupérer les données de l'URL
+### Récupérer les données de l'URL
 
 - Etant donner qu'on veut afficher des choses différentes sur une même page en fonction de l'endroit choisi, il faut attribuer un id alors pour la même page en fonction de l'id qui suivra l'url il affichera les demandés
 
@@ -521,19 +515,19 @@ Ici on rend un élément invisible, visible avec .Toggle qui permet enfaîte de 
 
 - ensuite on met une condition, si l'url de la page contient un id alors on affichera les information de l'id en question sinon renvoyer vers une autre page 
 
-<h3> Afficher les galeries de photos
+### Afficher les galeries de photos
 
 - L'utilisation de javascript pour créer les li et remplir à chaque fois qu'on rajoutera une image dans notre json il sera ajouté automatiquement sans avoir besoin de toucher le html
 
 - Ici on utilise les classiques de ce qu'on a vu tout au long du chapitre .queryselector pour pointé, .appendChild pour créer les nœuds dom.... 
 
-<h3> Utiliser ONSUBMIT et preventDefault()
+### Utiliser ONSUBMIT et preventDefault()
 
 
 - Submit permet de valider le fait  d'avoir soumis les informations necéssaires
 preventDefault() permet d'annuler toutes les actions par défaut de base 
 
-<h3> Se servir des timers 
+### Se servir des timers 
 
 
 - setTimeout Permet d'afficher en différé 
@@ -546,7 +540,7 @@ preventDefault() permet d'annuler toutes les actions par défaut de base
 
 <h2> Valider les formulaires coté client 
 
-<h3> Valider automatiquement les navigateurs
+### Valider automatiquement les navigateurs
 
 - Chaque navigateur peut avoir une validation automatique, elle n'est pas présenter de là même manière mais pour faire appel a elle il y a une méthode.
 
@@ -554,11 +548,11 @@ preventDefault() permet d'annuler toutes les actions par défaut de base
 
 - Remarque : C'est assez puissant mais ça aussi des limites
 
-<h3> Désactiver les validations automatique du formulaire 
+### Désactiver les validations automatique du formulaire 
 
 - Il suffit d'ajouter novalidate à la balise form
 
-<h3> Valider coté client en JavaScript 
+### Valider coté client en JavaScript 
 
 - Dans un premier temps il est important d'aller chercher les éléments en question qui se mettront sous formes de NodeList 
 
@@ -576,7 +570,7 @@ preventDefault() permet d'annuler toutes les actions par défaut de base
 
 - e.target.submit(); permet de soumettre l'élément nommé que contient e c'est a dire ici le form
 
-<h3> Générer des messages d'erreur
+### Générer des messages d'erreur
 
 - classList.add permet d'ajouter une classe css à un élément exemple changer de couleurs...
 
@@ -590,13 +584,13 @@ et 'beforeend' permet de spécifier que 'on effectuer des modifications juste ap
 cette fonction est à utiliser au moment de là validation.
 
 
-<h3> Utiliser ONFOCUS et ONBLUR 
+### Utiliser ONFOCUS et ONBLUR 
 
 'focus' permet d’exécuter quelque chose lorsque l'on est sur un champs et 'blur' permet d'exécuter quelque chose lorsque l'on quitte un champ .
 
 <h2> Aborder JQuery et les bibliothèques
 
-<h3> Parcourir les bibliothèques de Javascript
+### Parcourir les bibliothèques de Javascript
 
 - Bibliothèque JavaScript : 
 mootoos ( intermédirere, avancé ), 
@@ -607,7 +601,7 @@ Angular ( c'est un Framework )
 JQuery ( Outils populaire )
 
 
-<h3> Intégrer JQuery à son site
+### Intégrer JQuery à son site
 
 
 - En a ajoutant le lien CDN  dans  le  < head > 
