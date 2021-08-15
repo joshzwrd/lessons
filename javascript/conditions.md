@@ -83,36 +83,40 @@ if (age == 18 && sexe == 'F') {
 
 Le switch case permet d’effectuer une opération en fonction de la valeur de l’expression en paramètre. Elle peut dans certains cas remplacer une série de if et else .On l’utilise lorsque les cas à gérer sont nombreux.
 
-	
-    switch (expression) {
-      case valeur1:
+```js	
+switch (expression) {
+    case valeur1:
+    //Instruction a executer si le résultat de 
+        //l'expression correspond a la valeur1
+    break
+    case valeur2:
         //Instruction a executer si le résultat de 
-         //l'expression correspond a la valeur1
-        break
-      case valeur2:
-         //Instruction a executer si le résultat de 
-         //l'expression correspond a la valeur2
-        break
-      default:
-        //Instruction par défaut si les valeur ne correspond pas l'exp
-        break
-    }
+        //l'expression correspond a la valeur2
+    break
+    default:
+    //Instruction par défaut si les valeur necorrespond pas l'exp
+    break
+}
+```
 
 
 Exemple d’un petit calendrier qui va afficher un moi si la valeur d’une case correspond a la valeur de la variable moi passée en paramètre.
-	
-    var mois = 2
-           switch (mois) {
-               case 1:
-                   "Janvier"
-                   break
-               case 2:
-                   "Fevrier"
-                   break
-               default:
-                   "Ce Mois n'existe pas"
-                   break
-           }
+
+```js	
+var mois = 2
+
+        switch (mois) {
+            case 1:
+                "Janvier"
+                break
+            case 2:
+                "Fevrier"
+                break
+            default:
+                "Ce Mois n'existe pas"
+                break
+        }
+```
 
 
 ## Le ternaire
