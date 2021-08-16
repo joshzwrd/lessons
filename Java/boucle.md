@@ -11,9 +11,12 @@ La syntaxe de la boucle tant que est simple. Cette boucle permet de controller l
 
 **Syntaxe :**
 
-    while(condition) {
-            //bloc d'instruction à exécuter
-        } 
+```java
+
+while(condition) {
+        //bloc d'instruction à exécuter
+    } 
+```
 
 On utilise la boucle tant que lorsque le programme doit effectuer plusieurs fois le mème traitement.
 
@@ -21,20 +24,27 @@ On utilise la boucle tant que lorsque le programme doit effectuer plusieurs fois
 
 **Exemple d’une affichage des 5 premiers entiers :**
 	
-    public class Boucle {
+```java
+
+public class Boucle {
     
-        public static void main(String[] args) {
-    //initialisation du compteur
-            int compteur = 1;
-    //condition de poursuite
-            while (compteur <= 5) {
-    //instruction à executer
-                System.out.println(compteur);
-    //incremetation du compteur
-                compteur++;
-            }
+    public static void main(String[] args) {
+
+//initialisation du compteur
+        int compteur = 1;
+
+//condition de poursuite
+        while (compteur <= 5) {
+
+//instruction à executer
+            System.out.println(compteur);
+
+//incremetation du compteur
+            compteur++;
         }
     }
+}
+```
 
 On initialise le compteur à 1 pour qu’il commence par 1
 
@@ -44,9 +54,12 @@ On utilise la boucle for pour réitérer une exécution un nombre de fois connu 
 
 **syntaxe :**
 
-    for (val1; condition ; compteur) {
-        //instruction;
-    }
+```java
+for (val1; condition ; compteur) {
+    
+    //instruction;
+}
+```
 
 
 
@@ -56,33 +69,37 @@ On utilise la boucle for pour réitérer une exécution un nombre de fois connu 
 La boucle foreach (boucle for avancée) est une boucle très pratique en java. On utilise la boucle foreach pour parcourir les tableaux ainsi que les collections d’objets. La boucle foreach lit les elements un par un.
 
 **Syntaxe :**
-
-    for(type variable : tableau){
+```java
+for(type variable : tableau){
     .
-    }
+}
+```
 
 On peut l’interpréter de cette façon: “pour chaque valeur(variable) de ce tableau” on execute une instruction entre les accolades ouvrante et fermante.
 
 
 **Exemple :**
 
-    package boucles_foreach;
+```java
+
+package boucles_foreach;
     
-    public class Principale {
+public class Principale {
     
-        public static void main(String[] args) {
+    public static void main(String[] args) {
     
-            int[] tab = new int[4];
+        int[] tab = new int[4];
     
-            tab[0] = 9;
-            tab[2] = 10;
-            tab[3] = 56;
-            tab[1] = 23;
+        tab[0] = 9;
+        tab[2] = 10;
+        tab[3] = 56;
+        tab[1] = 23;
     
-            for (int v : tab) {
-                System.out.println(v);
-            }
-    
+        for (int v : tab) {
+            System.out.println(v);
         }
     
     }
+    
+}
+```

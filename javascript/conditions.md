@@ -54,12 +54,15 @@ if (age == 18) {
 
 Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’une variable, on utilise ce qu’on appel les opérateurs de comparaison.
 
-    a == b // a égale à b
-    a === b // a == b et a est de même "type" que b
-    a >= b // a supérieur OU égal à b
-    a > b   // a strictement supérieur à b
-    a <= b // a inférieur OU égal à b
-    a < b   // a strictement inférieur à b
+```js
+
+a == b // a égale à b
+a === b // a == b et a est de même "type" que b
+a >= b // a supérieur OU égal à b
+a > b   // a strictement supérieur à b
+a <= b // a inférieur OU égal à b
+a < b   // a strictement inférieur à b
+```
 
 Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
 	
@@ -76,21 +79,28 @@ if (age == 18 && sexe == 'F') {
 
 ## Quelques opérateurs booléens
 
-    // || OU
-    true || true // true
-    true || false // true
-    false || true // true
-    false || false // false
 
-    // && ET
-    true && true // true
-    true && false // false
-    false && true // false
-    false && false // false
+```js
 
-    // ! NON
-    !true # false
-    !false # true
+// || OU
+
+true || true // true
+true || false // true
+false || true // true
+false || false // false
+
+// && ET
+
+true && true // true
+true && false // false
+false && true // false
+false && false // false
+
+// ! NON
+
+!true # false
+!false # true
+```
 
 ## Le switch / case (Les conditions en JavaScript)
 
@@ -135,7 +145,12 @@ var mois = 2
 ## Le ternaire
 
 Le ternaire **(opérateur conditionnel)** permet de rendre les conditions plus simples utiliser
+
+```js
 	
-    // condition ? <instruction a executer si vrai> : <instruction a executer si faux>
-    sexe= 'M'
-    "Je suis " + (sexe == 'M'? "Homme" : "Femme")
+// condition ? <instruction a executer si vrai> : <instruction a executer si faux>
+
+sexe= 'M'
+"Je suis " + (sexe == 'M'? "Homme" : "Femme")
+
+```

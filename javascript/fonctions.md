@@ -96,7 +96,10 @@ Une fonction utilisée sur un objet est appéllé méthode. Les méthodes sont u
 
 **Exemple :**
 	
-    "ok".toUpperCase() // OK
-    "Je suis Jean".split(' ') // ["Je", "suis", "Jean"]
-    1.toString() // '1'
-    1.1312312312.toFixed(2) // '1.13'
+```js
+
+"ok".toUpperCase() // OK  cette méthode permet de mettre toutes les lettres en majuscules
+"Je suis Jean".split(' ') // ["Je", "suis", "Jean"]
+1.toString() // '1'
+1.1312312312.toFixed(2) // '1.13'
+```

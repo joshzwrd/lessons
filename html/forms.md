@@ -10,9 +10,12 @@ Un formulaire Html est composé d’un ou plusieurs elements comme par exemple :
 La déclaration d’un formulaire se fait par la balise form et dans cette balise on precise les attributs comme par exemple: **name, method, action** etc….
 
 Un formulaire est un element important pour un site web lorsqu’on veux avoir les avis des différentes utilisateurs de votre site. Si vous voulez un système de quiz pour vote site on aura besoin de formulaire. C’est un element qu’il ne faut pa négliger.
-	
+
+```html
+
     <form name="formulaire" action="" method="post">
     </form>
+```
 
 L’attribut **name** : Pour attribuer un nom au formulaire
 
@@ -28,8 +31,11 @@ Les données du formulaire peuvent envoyées de deux façons différentes en GET
 Les différents elements d’un formulaire doivent être placer a l’intérieur du formulaire.
 
 Si on veut intégrer par exemple un champs de texte dans uns formulaire vous avez besoin sans doute la balise input.
-	
+
+```html
+
     <input type="text" name="" id="">
+```
 
 ## La Balise input
 
@@ -82,20 +88,26 @@ Un textarea dispose des attributs suivants:
 - cols: définir la hauteur du champs, cela désigne le nombre de ligne visible dans le champs. Lorsque le texte dépasse le nombre de lignes, une barre de defilement fait son apparition automatiquement.
 
 **Syntaxe :**
-	
+
+```html
     <textarea name="" id="" cols="30" rows="10"></textarea>
+```
 
 ## La Balise select
 
 La balise select permet de declarer une liste déroulante qu’on peut remplir avec des option.
-	
+
+```html
     <select name="" id="">
             <option value=""></option>
     </select>
+```
 
 La balise option dispose d’un attribut booléen selected. Lorsque cet attribut est déclaré, c’est l’option qui le contient qui sera sélectionnée lors du chargement de la page.
 
 **Exemple d’un code pour la création d’un simple formulaire :**
+
+```html
 
     <form name="formulaire" method="post" action="">
             Sexe<br>
@@ -116,3 +128,4 @@ La balise option dispose d’un attribut booléen selected. Lorsque cet attribut
             <input type="button" name="soumet" value="Soummision">
     
     </form>
+```
