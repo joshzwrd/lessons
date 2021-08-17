@@ -239,11 +239,17 @@ Il faut non seulement les déclarés mais aussi les initialiser (Donner une vale
 
 - permet des travaillez avec les nombres
 
-- Math.random = choisir un nombre aléatoire 
+```js
+Math.random = choisir un nombre aléatoire
+
 Math.floor =  Arrondie au plus bas    Math.floor(4.7);    // returns 4
-- Math.ceil = Arrondie au plus haut    Math.ceil(4.4);     // returns 5
-- Math.round = Arrondi en fonction du chiffre après la virgule 
-- Math.round(4.7);    // returns 5  | Math.round(4.4);    // returns 4
+
+Math.ceil = Arrondie au plus haut    Math.ceil(4.4);     // returns 5
+
+Math.round = Arrondi en fonction du chiffre après la virgule 
+
+Math.round(4.7);    // returns 5  | Math.round(4.4);    // returns 4
+```
 
 ### Objet Date
 
