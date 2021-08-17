@@ -8,48 +8,38 @@
 Pour écrire les condition en JavaScript on procède de la manière suivant:
 
 ```js
-
 if (expression) {
     //instruction a executer
 }
-```
-
+```	
 Supposons qu’on veut afficher la catégorie d’une personne à un utilisateur en fonction de son age en s’assurant que la Variable age est déclarée.
-	
 ```js
 var age = 18
-
 if (age == 18) {
     "Il est Majeur!"
 }
-```
-
+```	
 Maintenant on veut afficher un autre message  à l’utilisateur dans le cas ou l’age de la personne n’est pas égale  à 18. C’est-a-dire l’expression est fausse.
-
-```js
+```js	
 var age = 20
-
 if (age == 18 ) {
     "Il est Majeur!"
 } else {
     "Il n'est pas Majeur!"
 }
-```
-
+```	
 Il existe ce qu’on appel les conditions multiples dans les cas plus complexes. Par exemple si on souhaite afficher la catégorie d’une personne pour chaque tranche d’âge.
 
-```js
-var age = 18
-
-if (age == 18) {
-    "Il est Majeur!"
-} else if (age > 18) {
-    "Il est Adulte!"
-} else {
-    "Il est mineur!"
-}
-```
-
+```js			
+    var age = 18
+    if (age == 18) {
+        "Il est Majeur!"
+    } else if (age > 18) {
+        "Il est Adulte!"
+    } else {
+       "Il est mineur!"
+    }
+```	
 ## Opérateur de comparaison(Les condition en JavaScript)
 
 Lorsqu’on souhaite faire les conditions en JavaScript ou tester la valeur d’une variable, on utilise ce qu’on appel les opérateurs de comparaison.
@@ -65,20 +55,16 @@ a < b   // a strictement inférieur à b
 ```
 
 Parfois on veut combiner les condition pour trouver un résultat, par exemple : on veut accepter seulement les filles qui ont 20 ans dans un restaurant. Cela nécessite l’utilisation des opérateurs booléens.
-	
-```js
+```js	
 var age = 18
-
 var sexe = 'F'
 if (age == 18 && sexe == 'F') {
     "Vous avez accès!"
 } else if (age > 18) {
     "Accès refuse!"
-}
-``` 
-
+} 
+```	
 ## Quelques opérateurs booléens
-
 
 ```js
 
