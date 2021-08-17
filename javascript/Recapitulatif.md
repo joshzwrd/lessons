@@ -77,15 +77,16 @@ Une variable va pouvoir convertir là valeur d'une chaîne de caractère pour ob
 
 ### Syntaxe conditionnelle 
 
-- var age = 43;
+```js
+var age = 43;
 
-- if(age >= 18){ 
+if(age >= 18){ 
 	console.log(~ à  $(age) ans, vous êtes majeur.~);
 }
 else{
 	console.log(~à  $(age) ans, vous êtes encore mineur ~);
 }
-
+```
 - dans le cas ou la valeur de age = +18 la console nous renvoie le if dans le cas ou la valeur de age = -18  à 18 la console renvoie else
 
 
