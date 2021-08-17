@@ -140,13 +140,15 @@ console.log("Boucle terminée !");
 
 ### Continue :
 
-- For( Let i = 1;  i < 10;  i++){
+```js
+for( Let i = 1;  i < 10;  i++){
 	if(i  == 5){
 		continue;
 	}
 	console.log(~La valeur de la variable i est $(i).~);
 }
 console.log("Boucle terminée !");
+```
 
 - Continue permet donc de sortir de litteration de la boucle mais va continuer et afficher le reste 
 
