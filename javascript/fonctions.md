@@ -73,8 +73,8 @@ var multiplier = function (nombre){
 
 multiplier(5) //cela donne 25
 multiplier() //1
-```
 
+```
 ## Les méthodes(Fonction en JavaScript)
 
 On peut aussi stocker une fonction dans une propriété d’un objet.
@@ -95,8 +95,9 @@ personne.sexe() //Masculin
 Une fonction utilisée sur un objet est appéllé méthode. Les méthodes sont utilisés sur les types d’objet natifs du JavaScript comme les chaines de caractères ou les entiers.
 
 **Exemple :**
-	
-    "ok".toUpperCase() // OK
+```js
+    "ok".toUpperCase() // OKs
     "Je suis Jean".split(' ') // ["Je", "suis", "Jean"]
     1.toString() // '1'
     1.1312312312.toFixed(2) // '1.13'
+```
