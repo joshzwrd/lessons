@@ -37,36 +37,30 @@ Pour se déplacer dans l’éditeur on peut utiliser les flèches ou **`h`**-**`
 
 **`w`** = se déplacer de mot en mot
 
-**`:vsplit`** = permet d'ouvrir un nouvel onglet 
-
-**``:sp``** = permet de découper l'écran horizontalement 
-**``:vsp``** = permet de découper l'écran verticalement
-
-**`/`** = rechercher un mot
-
-**`:s`** = rechercher et remplacer du texte
-Exemple: **``:s/ancien/nouveau``** remplace la première occurrence de la ligne où se trouve le curseur 
 
 **``Echap *G``** = Raccourci pour se rendre à une ligne précise en remplaçant **``*``** par un nombre
+
 Exemple: **``Echap 28G``** permet de se rendre directement à la ligne 28
 
-    Echap :! = lancer une commande externe
-    Echap :q = quitter
-    Echap :q! = quitter absolument
-    Echap :w = enregistrer le fichier
-    Echap :w = nom_du_fichier pour faire enregistrer-sous nom_du_fichier
-    Echap :wq = enregistrer le fichier et quitter 
+Il est important de faire **``Echap``** casi avant chaque action afin de se remettre en mode commande
+
+**``Echap :!``** = lancer une commande externe
+**``Echap :q``** = quitter
+**``Echap :q!``** = quitter absolument
+**``Echap :w``** = enregistrer le fichier
+**``Echap :w``** = nom_du_fichier pour faire enregistrer-sous nom_du_fichier
+**``Echap :wq``** = enregistrer le fichier et quitter 
 
 
 ## Opérations standard (editer, copier, coller, annuler…)
 
-**`i`** = insérer
+**`i`** = insérer | 
 **`I`** = insérer début de ligne
 
-**`a`** = insérer aprés le caractére courant 
+**`a`** = insérer aprés le caractére courant | 
 **`A`** = insérer à la fin de ligne 
 
-**`o`** = insérer sur une nouvelle ligne en dessous
+**`o`** = insérer sur une nouvelle ligne en dessous | 
 **`O`** = insérer sur une nouvelle ligne au dessus
 
 **`x`** = effacer des lettres 
@@ -106,6 +100,24 @@ Pour Effectuer un copier coller il faut donc faire **`yy`** puis **`d`** ou **`*
 **`r`** = remplacer une lettre
 
 **`G`** = sauter à la ligne n°X
+
+## Opérations avancées (split, fusion, recherche…)
+
+**`/`** = rechercher un mot
+
+**`:s`** = rechercher et remplacer du texte
+
+Exemple: **``:s/ancien/nouveau``** remplace la première occurrence de la ligne où se trouve le curseur 
+
+**``:r``** = fusion de fichiers
+
+**`:vsplit`** = permet d'ouvrir un nouvel onglet
+
+Pour changer de fenêtre la même procédure s'applique : **``Ctrl``** + **``w``** + **``w``**
+
+**``:sp``** = permet de découper l'écran horizontalement 
+**``:vsp``** = permet de découper l'écran verticalement
+
 
 
 

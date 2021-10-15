@@ -3,48 +3,58 @@
 
 ## Les commandes pratiques 
 
-Les 2 commandes indispensable afin de pouvoir se documenter sur linux sont **man** et **help**, Ils permettent d'afficher les pages du manuel système.
+Les 2 commandes indispensable afin de pouvoir se documenter sur linux sont **``man``** et **``help``**, Ils permettent d'afficher les pages du manuel système.
 
 Quelle est la différence entre man et help ?
 
-**man :** commande extérieur
-**help :** commande interne au bash
+**``man``** : commande extérieur
+**``help``** : commande interne au bash
 
-Naviguer dans man : 
-/ permet de rechercher quelque choses
-n permet de descrendre et N remonter
+Naviguer dans man : {
 
-**which :** permet de trouver un chemin
+**``/``** pour rechercher un mot
 
-**file :** permet de savoir quel est le type fichier 
-    Exemple « file $(which cp) »
+**``n``** permet de descrendre et **``N``** remonter
 
+}
 
-**type :** permet de déterminer le type d’une commande (primitive, haché, autre)
+**``which``** : permet de trouver un chemin
 
-**ldd :** permet de voir les librairies dynamique lier a cp 
+**``file``** : permet de savoir quel est le type fichier 
+```bash
+Exemple « file $(which cp) »
+```
 
-**whereis :** permet de retrouver des fichiers d’un certains nom 
+**``type``** : permet de déterminer le type d’une commande (primitive, haché, autre)
 
-Exemple : whereis passwd 
+**``ldd``** : permet de voir les librairies dynamique lier a cp 
 
-**whatis :** permet de savoir quoi sert une commande
-    Exemple « whatis cp »  
-    cp = Copier des fichiers et des répertoires
+**``whereis``** : permet de retrouver des fichiers d’un certains nom 
+```bash
+Exemple w :hereis passwd 
+```
+**``whatis``** : permet de savoir quoi sert une commande
+```bash
+Exemple « whatis cp »  
+cp = Copier des fichiers et des répertoires
+```
 
-**apropos :** permet de trouver une commande en fonction de ce qu’on veut faire
-    Exemple « apropos renommer » 
-    rename.ul 	-Renommer des fichiers
+**``apropos``** : permet de trouver une commande en fonction de ce qu’on veut faire
 
-**less :** permet d’afficher un fichier et de le parcourir de haut en bas, il s’utilise comme le man pour naviguer.
+```bash
+Exemple « apropos renommer » 
+rename.ul 	-Renommer des fichiers
+```
+
+**``less``** : permet d’afficher un fichier et de le parcourir de haut en bas, il s’utilise comme le man pour naviguer.
 
 ### A savoir !!!
 
-Shell = interpréteur de commande 
+**``Shell``** = interpréteur de commande 
 
 Toujours faire la distinction entre l'espace utilisateur et kernel(noyau)
 
-Commande Pour passer en français :
+Commande Pour passer en français
 ```bash
 Sudo apt install manpages-fr
 Sudo apt install manpages-fr-extra
