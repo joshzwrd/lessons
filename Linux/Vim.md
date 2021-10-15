@@ -45,14 +45,21 @@ Exemple: **``Echap 28G``** permet de se rendre directement à la ligne 28
 Il est important de faire **``Echap``** casi avant chaque action afin de se remettre en mode commande
 
 **``Echap :!``** = lancer une commande externe
+
 **``Echap :q``** = quitter
+
 **``Echap :q!``** = quitter absolument
+
 **``Echap :w``** = enregistrer le fichier
+
 **``Echap :w``** = nom_du_fichier pour faire enregistrer-sous nom_du_fichier
+
 **``Echap :wq``** = enregistrer le fichier et quitter 
 
 
-## Opérations standard (editer, copier, coller, annuler…)
+## Opérations de bases
+
+###  Insertion
 
 **`i`** = insérer | 
 **`I`** = insérer début de ligne
@@ -62,6 +69,9 @@ Il est important de faire **``Echap``** casi avant chaque action afin de se reme
 
 **`o`** = insérer sur une nouvelle ligne en dessous | 
 **`O`** = insérer sur une nouvelle ligne au dessus
+
+
+### Suppresion
 
 **`x`** = effacer des lettres 
 
@@ -83,6 +93,9 @@ Placez le curseur sur la première lettre d'un mot. Tapez ensuitedw(delete word)
 
 **`d$`** = supprimez du curseur jusqu'à la fin de la ligne.
 
+
+### Copier-Coller
+
 **`yy`** = copier une ligne en mémoire 
 
 **`ym`** = copier 1 mot 
@@ -94,6 +107,8 @@ Placez le curseur sur la première lettre d'un mot. Tapez ensuitedw(delete word)
 **`*p`** = coller plusieurs fois une phrase en remplaçant **`*`** par un nombre, Exemple **`8p`** pour coller 8 fois
 
 Pour Effectuer un copier coller il faut donc faire **`yy`** puis **`d`** ou **`*d`**
+
+### Interaction
 
 **`u`** = annuler les modifications
 
