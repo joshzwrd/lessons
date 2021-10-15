@@ -37,13 +37,26 @@ Pour se déplacer dans l’éditeur on peut utiliser les flèches ou **`h`**-**`
 
 **`w`** = se déplacer de mot en mot
 
-```vim
-Echap :q = quitter
-Echap :q! = quitter absolument
-Echap :w = enregistrer le fichier
-Echap :w = nom_du_fichier pour faire enregistrer-sous nom_du_fichier
-Echap :wq = enregistrer le fichier et quitter 
-```
+**`:vsplit`** = permet d'ouvrir un nouvel onglet 
+
+**``:sp``** = permet de découper l'écran horizontalement 
+**``:vsp``** = permet de découper l'écran verticalement
+
+**`/`** = rechercher un mot
+
+**`:s`** = rechercher et remplacer du texte
+Exemple: **``:s/ancien/nouveau``** remplace la première occurrence de la ligne où se trouve le curseur 
+
+**``Echap *G``** = Raccourci pour se rendre à une ligne précise en remplaçant **``*``** par un nombre
+Exemple: **``Echap 28G``** permet de se rendre directement à la ligne 28
+
+    Echap :! = lancer une commande externe
+    Echap :q = quitter
+    Echap :q! = quitter absolument
+    Echap :w = enregistrer le fichier
+    Echap :w = nom_du_fichier pour faire enregistrer-sous nom_du_fichier
+    Echap :wq = enregistrer le fichier et quitter 
+
 
 ## Opérations standard (editer, copier, coller, annuler…)
 
