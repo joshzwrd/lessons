@@ -1,12 +1,12 @@
 # Les Commandes
 
-## L'installer 
+## L'installation
 
 ```bash
 sudo apt-get install vim
 ```
 
-Pour lancer le tutorial (fortement recommandé)
+Pour lancer le tutorial **(fortement recommandé)**
 
 ```bash
 vimtutor
@@ -59,7 +59,8 @@ Il est important de faire **``Echap``** casi avant chaque action afin de se reme
 
 ## Opérations de bases
 
-###  Insertion
+
+### 1. Insertion
 
 **`i`** = insérer | 
 **`I`** = insérer début de ligne
@@ -71,7 +72,8 @@ Il est important de faire **``Echap``** casi avant chaque action afin de se reme
 **`O`** = insérer sur une nouvelle ligne au dessus
 
 
-### Suppresion
+
+### 2. Suppresion
 
 **`x`** = effacer des lettres 
 
@@ -94,7 +96,8 @@ Placez le curseur sur la première lettre d'un mot. Tapez ensuitedw(delete word)
 **`d$`** = supprimez du curseur jusqu'à la fin de la ligne.
 
 
-### Copier-Coller
+
+### 3. Copier-Coller
 
 **`yy`** = copier une ligne en mémoire 
 
@@ -108,13 +111,17 @@ Placez le curseur sur la première lettre d'un mot. Tapez ensuitedw(delete word)
 
 Pour Effectuer un copier coller il faut donc faire **`yy`** puis **`d`** ou **`*d`**
 
-### Interaction
+
+
+### 4. Interaction
 
 **`u`** = annuler les modifications
 
 **`r`** = remplacer une lettre
 
 **`G`** = sauter à la ligne n°X
+
+
 
 ## Opérations avancées (split, fusion, recherche…)
 
