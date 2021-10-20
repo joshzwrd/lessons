@@ -51,6 +51,7 @@ pour le polygon chaque doublette de nombres défini son placement x et y dans **
 ## Créer des formes 2 + Path
 
 Path = chemin
+
 Dans 90% des cas c'est D3 lui même qui génère les paths pour faire les formes avancé
 ```html
 <svg width="500" height="400" style="background: rgb(28,24,83)">
