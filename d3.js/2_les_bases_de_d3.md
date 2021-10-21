@@ -10,6 +10,8 @@
 
 Pour le **script** il est mieux de créer un fichier **JavaScript** à par et de faire appel celui-ci après le lien de **d3.js**
 
+
+
 ## Select et SelectAll
 
 Le **selector** fonctionne de là même manière que le querySelector pour rappel d3 est un framework js
@@ -29,6 +31,7 @@ d3.js :
 const d3div = d3.select('.box');
 const d3div = d3.selectAll('.box');
 ```
+
 
 
 ## Ajouter avec "append"
@@ -169,3 +172,66 @@ circles.enter()
 dans cet exemple enter il n'y a qu'un seul élément circle dans le html mais lui **complète en fonction du nombres d'éléments dans le tableau**.
 
 **Voir Exercice 2 : "Enter"**
+
+## Utiliser les données d'une source externe
+
+En utilisant les promesses avec **``.then``** on peut aller chercher des données asynchrone 
+
+json : 
+```json
+ [
+    {
+       "radius": 20, 
+       "x": 50, 
+       "y": 50, 
+       "color":"red"
+   },
+   {
+       "radius":25, 
+       "x":150, 
+       "y":50, 
+       "color":"deeppink"
+   },
+   {
+       "radius":30, 
+       "x":250, 
+       "y":50, 
+       "color":"indigo"
+   },
+   {
+       "radius":35, 
+       "x":350, 
+       "y":50, 
+       "color":"pink"
+   },
+   {
+       "radius":40, 
+       "x":450, 
+       "y":50, 
+       "color":"green"
+   }
+]
+```
+
+js :
+
+```js
+d3.json('data.json').then(donnee => {
+    const svg = d3.select('svg');
+    const circles = svg.selectAll('circle')
+                       .data(donnee)
+                       .attr('r', function(d){return d.radius})
+                       .attr('cx', function(d){return d.x})
+                       .attr('cy', function(d){return d.y})
+                       .attr('fill', function(d){return d.color});
+    
+    circles.enter()
+           .append('circle')
+           .attr('r', function(d){return d.radius})
+           .attr('cx', function(d){return d.x})
+           .attr('cy', function(d){return d.y})
+           .attr('fill', function(d){return d.color});
+})
+```
+
+**Voir Exercice 3 : "JSON"**

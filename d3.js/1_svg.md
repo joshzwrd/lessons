@@ -2,7 +2,7 @@
 
 ## Que sont les SVG ?
 
-- SVG = Scalable Vector Graphics 
+- **SVG = Scalable Vector Graphics**
 - Ne perdent pas en qualité lorsqu'on les Zoom
 - Petites tailles contrairement aux JPG, PNG.
 - Possèdent des tas de fonctionnalités (Taille, couleurs, formes ... ).
@@ -16,21 +16,32 @@ Pour créer un SVG il faut l'initier de la manière suivante
 <svg width="500" height="400"> 
 
 <!-- On peut mettre du texte dedans  -->
+
 <text x="100" y="80" fill="white">Du texte en svg</text>
 
+
 <!-- dessiner une ligne -->
+
 <line x1="50" y1="150" x2="200" y2="220" stroke="red"/>
 
+
 <!-- dessiner un cercle -->
+
 <circle cx="350" cy="100" r="50" fill="pink"></circle>
 
+
 <!-- dessiner un rectangle -->
+
 <rect x="50" y="300" width="100" height="50" fill="crimson"></rect>
 
+
 <!-- dessiner une ellipse -->
+
 <ellipse cx="250" cy="250" rx="50" ry="100" fill="white"></ellipse>
 
+
 <!-- dessiner un polygone -->
+
 <polygon points="200,10 250,190 160,210" fill="white"></polygon>
 </svg>
 ```
@@ -50,7 +61,7 @@ pour le polygon chaque doublette de nombres défini son placement x et y dans **
 
 ## Créer des formes 2 + Path
 
-Path = chemin
+**Path = chemin**
 
 Dans 90% des cas c'est D3 lui même qui génère les paths pour faire les formes avancé
 ```html
