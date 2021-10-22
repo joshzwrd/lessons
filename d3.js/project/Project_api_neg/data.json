@@ -1,0 +1,64 @@
+
+ [
+   {
+    "nom": "Suede",
+    "prix": 200
+   },
+   {
+    "nom": "Japon",
+    "prix": 700
+   },
+   {
+    "nom": "Québec",
+    "prix": 500
+   },
+   {
+    "nom": "Egypte",
+    "prix": 300
+   }
+   ,
+   {
+    "nom": "India",
+    "prix": -400
+   },
+   {
+    "nom": "Jakarta",
+    "prix": 900
+   },
+   {
+    "nom": "Lille",
+    "prix": 100
+   },
+   {
+    "nom": "Amiens",
+    "prix": -200
+   },
+   {
+    "nom": "Marseille",
+    "prix": 300
+   },
+   {
+    "nom": "Madrid",
+    "prix": 200
+   },
+   {
+    "nom": "Aix",
+    "prix": 300
+   },
+   {
+    "nom": "USA",
+    "prix": 600
+   },
+   {
+    "nom": "Naples",
+    "prix": -200
+   },
+   {
+    "nom": "Grece",
+    "prix": -500
+   },
+   {
+    "nom": "Porto",
+    "prix": 100
+   }
+]

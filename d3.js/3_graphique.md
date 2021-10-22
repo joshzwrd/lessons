@@ -38,8 +38,8 @@ d3.json('data.json').then(donnee => {
 
 **``domain``** est calculé de 0 à la plus grande valeur 
 
-**``range``** est calculé à la hauteur du cadre de travail "svg" 
-Pour avoir le résultat il faut retourné y sur les fonctions des attr
+**``range``** est calculé à la hauteur du cadre de travail **``"svg"``** 
+Pour avoir le résultat il faut retourné **``y``** sur la hauteur du **rectangle(svg)**
 
 
 ## Créer l'échelle pour l'axe "X"
@@ -74,7 +74,7 @@ là méthode **``bandwidth()``** permet au élément json de s'étendre et d'**o
 
 Afin que ça puisse être harmonieux il faut utiliser des paddings : 
 
-Les paddings vont de 0 à 1
+**Les paddings vont de 0 à 1**
 
 **``paddingInner``** : marge entre les éléments 
 

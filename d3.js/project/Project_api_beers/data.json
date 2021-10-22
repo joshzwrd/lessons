@@ -1,0 +1,32 @@
+
+ [
+   {
+    "nom": "Suede",
+    "prix": 200
+   },
+   {
+    "nom": "Japon",
+    "prix": 700
+   },
+   {
+    "nom": "Québec",
+    "prix": 500
+   },
+   {
+    "nom": "Egypte",
+    "prix": 300
+   }
+   ,
+   {
+    "nom": "India",
+    "prix": 400
+   },
+   {
+    "nom": "Qubec",
+    "prix": 500
+   },
+   {
+    "nom": "Eypte",
+    "prix": 300
+   }
+]
