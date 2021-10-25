@@ -2,7 +2,7 @@ const svg = d3.select('.box')
               .append('svg')
               .attr('width', 1800)
               .attr('height', 650)
-              .style('background', 'AntiqueWhite');
+              .style('background', 'HoneyDew');
 
 
 // Dimensions
@@ -20,14 +20,18 @@ const groupeX = graph.append('g')
 const groupeY = graph.append('g')
 
 
+
 d3.json('data.json').then(donnee => {
 
 
     // donnée Max
     const max = d3.max(donnee, d => d.prix);
     const min = d3.min(donnee, d => d.prix);
+//     const extend = d3.extend(donnee, d => d.prix);
+    
     const y = d3.scaleLinear()
-                .domain([0, max])
+               //  .domain([0, max])
+			    .domain(d3.extent(donnee, function(d){return d.prix;}))
                 .range([graphHeight, 0]);
     
     const x = d3.scaleBand()
@@ -40,21 +44,22 @@ d3.json('data.json').then(donnee => {
     const rects = graph.selectAll('rect')
                      .data(donnee);
     
-    rects.attr('width', x.bandwidth())
-         .attr('height', function(d){return graphHeight - y(d.prix)})
-         .attr('fill', 'teal')
-         .attr('x', function(d){return x(d.nom)})
-         .attr('y', function(d){return y(d.prix)});
+//     rects.attr('width', x.bandwidth())
+//          .attr('height', function(d){return graphHeight - y(d.prix)})
+//          .attr('fill', 'teal')
+//          .attr('x', function(d){return x(d.nom)})
+//          .attr('y', function(d){return y(d.prix)});
 
     rects.enter()
          .append('rect')
+         .attr("fill", function(d){return d.prix < 0 ? "darkred" : "lightsteelblue";})
          .attr('width', x.bandwidth())
-         .attr('height', function(d){return graphHeight - y(d.prix)})
-         .attr('fill', 'teal')
+         .attr('height', function(d){return Math.abs(y(d.prix) - y(0))})
          .attr('x', function(d){return x(d.nom)})
-         .attr('y', function(d){return y(d.prix)});
+         .attr('y', function(d){return y(Math.max(0, d.prix))});
          
 // Création et mise en place des Axes
+
 
 const axeX = d3.axisBottom(x)
 const axeY = d3.axisLeft(y)
@@ -66,5 +71,25 @@ groupeX.selectAll('text')
 .attr('text-anchor', 'end');
 
 groupeY.call(axeY);
+
+// L'axe central
+
+var baseline = d3.axisBottom(x)
+.tickSize(0)
+.tickFormat('');
+
+graph.append('g')
+.attr('class', 'baseline')
+.attr('transform', `translate(0, ${ y(0) })`)
+.call(baseline);
+
+// var valueLine = d3.line()
+// .x(function(d) {return x(d.prix)})
+// .y(function(d) {return y(d.nom)});
+
+// // Ajout du Path
+// graph.append('path')
+// .attr("class", "line")
+// .attr('d', valueLine(donnee));
 
 })
