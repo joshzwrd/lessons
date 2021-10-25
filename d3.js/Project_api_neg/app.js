@@ -43,6 +43,7 @@ d3.json('data.json').then(donnee => {
     
     const rects = graph.selectAll('rect')
                      .data(donnee);
+                     
     
 //     rects.attr('width', x.bandwidth())
 //          .attr('height', function(d){return graphHeight - y(d.prix)})
@@ -52,11 +53,19 @@ d3.json('data.json').then(donnee => {
 
     rects.enter()
          .append('rect')
-         .attr("fill", function(d){return d.prix < 0 ? "darkred" : "lightsteelblue";})
+         .attr("class", function(d){return d.prix < 0 ? "negative" : "positive";})
          .attr('width', x.bandwidth())
-         .attr('height', function(d){return Math.abs(y(d.prix) - y(0))})
+         .attr('height', 0)
          .attr('x', function(d){return x(d.nom)})
-         .attr('y', function(d){return y(Math.max(0, d.prix))});
+         .transition()
+         .duration(600)
+
+         .attr('y', function(d){return y(Math.max(0, d.prix))})
+         .attr('height', function(d){return Math.abs(y(d.prix) - y(0))})
+         
+         
+
+
          
 // Création et mise en place des Axes
 
