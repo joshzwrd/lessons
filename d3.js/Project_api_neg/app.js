@@ -13,12 +13,22 @@ const graphHeight = 600 - margin.top - margin.bottom;
 const graph = svg.append('g')
                  .attr('width', graphWidth)
                  .attr('height', graphHeight)
-                 .attr('transform', `translate(${margin.left}, ${margin.top})`);
+                 .attr('transform', `translate(${margin.left}, ${margin.top})`)
+                //  .on('mouseover', function(d){
+                //      d3.select(this)
+                //         console.log(d)
+
+                //  })
 
 const groupeX = graph.append('g')
                      .attr('transform', `translate(0, ${graphHeight})`);
 const groupeY = graph.append('g')
 
+// ma div tooltip 
+
+var div = d3.select("body").append("div")   
+            .attr("class", "tooltip")               
+            .style("opacity", 0);
 
 
 d3.json('data.json').then(donnee => {
@@ -42,27 +52,46 @@ d3.json('data.json').then(donnee => {
 
     
     const rects = graph.selectAll('rect')
-                     .data(donnee);
-                     
-    
-//     rects.attr('width', x.bandwidth())
-//          .attr('height', function(d){return graphHeight - y(d.prix)})
-//          .attr('fill', 'teal')
-//          .attr('x', function(d){return x(d.nom)})
-//          .attr('y', function(d){return y(d.prix)});
+                    .data(donnee)
+                    .enter()
+                    .append('rect')
+                    .attr("class", function(d){return d.prix < 0 ? "negative" : "positive";})
+                    .on('mouseover', function(d){
+                        d3.select(this)
+                            .style("opacity", 0.2)
+                            .style("stroke", "black")
 
-    rects.enter()
-         .append('rect')
-         .attr("class", function(d){return d.prix < 0 ? "negative" : "positive";})
-         .attr('width', x.bandwidth())
-         .attr('height', 0)
-         .attr('x', function(d){return x(d.nom)})
-         .transition()
-         .duration(600)
 
-         .attr('y', function(d){return y(Math.max(0, d.prix))})
-         .attr('height', function(d){return Math.abs(y(d.prix) - y(0))})
-         
+                       div
+                            .style("opacity", 1)
+                            .style("left", (d3.event.pageX+10) + "px")
+                            .style("top", (d3.event.pageY-30) + "px")
+                            .text(d.nom)
+                            .append("p")
+                            .text(d.prix)                            
+                            .transition()
+                            .duration(500);
+                    })
+                    .on('mouseout', function(d){
+                        d3.select(this)
+                        .style("opacity",1)
+                        .style("stroke", null);
+                        div
+                        .style("opacity", 0);
+                    })
+                    
+                    .attr('width', x.bandwidth())
+                    .attr('height', 0)
+                    .attr('x', function(d){return x(d.nom)})
+                    .attr('y', graphHeight)
+                    .transition()
+                    .duration(800)
+
+                    .attr('y', function(d){return y(Math.max(0, d.prix))})
+                    .attr('height', function(d){return Math.abs(y(d.prix) - y(0))})
+
+                    
+
          
 
 
@@ -71,7 +100,7 @@ d3.json('data.json').then(donnee => {
 
 
 const axeX = d3.axisBottom(x)
-const axeY = d3.axisLeft(y)
+const axeY = d3.axisLeft(y).ticks(5)
 
 groupeX.call(axeX);
 

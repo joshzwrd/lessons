@@ -9,6 +9,10 @@
     "prix": 700
    },
    {
+    "nom": "Japon",
+    "prix": -250
+   },
+   {
     "nom": "Québec",
     "prix": 500
    },
@@ -24,6 +28,9 @@
    {
     "nom": "Jakarta",
     "prix": 900
+   },{
+    "nom": "Jakarta",
+    "prix": -100
    },
    {
     "nom": "Lille",
@@ -60,5 +67,70 @@
    {
     "nom": "Porto",
     "prix": 100
+   },
+   {
+    "nom": "Luqa",
+    "prix": 400
+   },
+   {
+    "nom": "Luqa",
+    "prix": -150
+   },
+   {
+    "nom": "Roma",
+    "prix": 250
+   },
+   {
+    "nom": "Pula",
+    "prix": -350
+   },
+   {
+    "nom": "Porto V",
+    "prix": -100
+   },
+   {
+    "nom": "Cali",
+    "prix": 350
+   },
+   {
+    "nom": "Ottawa",
+    "prix": 450
+   },
+   {
+    "nom": "Burxelles",
+    "prix": 100
+   },
+   {
+    "nom": "Amsterdam",
+    "prix": 150
+   },
+   {
+    "nom": "Amsterdam",
+    "prix": -250
+   },
+   {
+    "nom": "Tokyo",
+    "prix": 800
+   },
+   {
+    "nom": "Tokyo",
+    "prix": -100
+   },
+   {
+    "nom": "Hem",
+    "prix": -400
+   },
+   {
+    "nom": "Nice",
+    "prix": 350
+   },
+   {
+    "nom": "Menton",
+    "prix": 300
+   },
+   {
+    "nom": "Alicante",
+    "prix": 200
    }
+
 ]
